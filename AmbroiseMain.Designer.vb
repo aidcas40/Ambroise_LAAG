@@ -31,6 +31,7 @@ Partial Class frmMain
         Me.btnBarber = New System.Windows.Forms.Button()
         Me.btnServices = New System.Windows.Forms.Button()
         Me.pnlServices = New System.Windows.Forms.Panel()
+        Me.btnExitServices = New System.Windows.Forms.Button()
         Me.btnServicesReset = New System.Windows.Forms.Button()
         Me.pnlAddOns = New System.Windows.Forms.Panel()
         Me.lblAddOns = New System.Windows.Forms.Label()
@@ -92,6 +93,7 @@ Partial Class frmMain
         Me.picBarber2 = New System.Windows.Forms.PictureBox()
         Me.picBarber1 = New System.Windows.Forms.PictureBox()
         Me.pnlCheckOut = New System.Windows.Forms.Panel()
+        Me.btnSubmit = New System.Windows.Forms.Button()
         Me.MaskedTextBox1 = New System.Windows.Forms.MaskedTextBox()
         Me.pnlSummary = New System.Windows.Forms.Panel()
         Me.lblSummary = New System.Windows.Forms.Label()
@@ -174,6 +176,7 @@ Partial Class frmMain
         'pnlNavbar
         '
         Me.pnlNavbar.BackColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer))
+        Me.pnlNavbar.Controls.Add(Me.btnExitServices)
         Me.pnlNavbar.Controls.Add(Me.pctLogo)
         Me.pnlNavbar.Controls.Add(Me.pnlHaircuts)
         Me.pnlNavbar.Controls.Add(Me.btnCheckOut)
@@ -191,7 +194,7 @@ Partial Class frmMain
         '
         Me.pctLogo.BackColor = System.Drawing.Color.Transparent
         Me.pctLogo.Image = CType(resources.GetObject("pctLogo.Image"), System.Drawing.Image)
-        Me.pctLogo.Location = New System.Drawing.Point(26, 352)
+        Me.pctLogo.Location = New System.Drawing.Point(26, 329)
         Me.pctLogo.Name = "pctLogo"
         Me.pctLogo.Size = New System.Drawing.Size(100, 85)
         Me.pctLogo.TabIndex = 21
@@ -244,6 +247,7 @@ Partial Class frmMain
         Me.btnBarber.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
         Me.btnBarber.BackgroundImage = CType(resources.GetObject("btnBarber.BackgroundImage"), System.Drawing.Image)
         Me.btnBarber.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnBarber.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnBarber.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBarber.Font = New System.Drawing.Font("Inter", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBarber.ForeColor = System.Drawing.Color.Black
@@ -283,11 +287,25 @@ Partial Class frmMain
         Me.pnlServices.Size = New System.Drawing.Size(626, 481)
         Me.pnlServices.TabIndex = 29
         '
+        'btnExitServices
+        '
+        Me.btnExitServices.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
+        Me.btnExitServices.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.btnExitServices.Font = New System.Drawing.Font("Inter", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExitServices.ForeColor = System.Drawing.Color.Black
+        Me.btnExitServices.Location = New System.Drawing.Point(12, 240)
+        Me.btnExitServices.Name = "btnExitServices"
+        Me.btnExitServices.Size = New System.Drawing.Size(129, 36)
+        Me.btnExitServices.TabIndex = 23
+        Me.btnExitServices.Text = "Exit"
+        Me.btnExitServices.UseVisualStyleBackColor = False
+        '
         'btnServicesReset
         '
         Me.btnServicesReset.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
         Me.btnServicesReset.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnServicesReset.Location = New System.Drawing.Point(464, 452)
+        Me.btnServicesReset.ForeColor = System.Drawing.Color.Black
+        Me.btnServicesReset.Location = New System.Drawing.Point(548, 452)
         Me.btnServicesReset.Name = "btnServicesReset"
         Me.btnServicesReset.Size = New System.Drawing.Size(75, 23)
         Me.btnServicesReset.TabIndex = 22
@@ -1005,6 +1023,7 @@ Partial Class frmMain
         '
         'pnlCheckOut
         '
+        Me.pnlCheckOut.Controls.Add(Me.btnSubmit)
         Me.pnlCheckOut.Controls.Add(Me.MaskedTextBox1)
         Me.pnlCheckOut.Controls.Add(Me.pnlSummary)
         Me.pnlCheckOut.Controls.Add(Me.lblSecurityCode)
@@ -1034,6 +1053,16 @@ Partial Class frmMain
         Me.pnlCheckOut.Name = "pnlCheckOut"
         Me.pnlCheckOut.Size = New System.Drawing.Size(626, 478)
         Me.pnlCheckOut.TabIndex = 7
+        '
+        'btnSubmit
+        '
+        Me.btnSubmit.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSubmit.Location = New System.Drawing.Point(209, 449)
+        Me.btnSubmit.Name = "btnSubmit"
+        Me.btnSubmit.Size = New System.Drawing.Size(75, 23)
+        Me.btnSubmit.TabIndex = 41
+        Me.btnSubmit.Text = "Submit"
+        Me.btnSubmit.UseVisualStyleBackColor = True
         '
         'MaskedTextBox1
         '
@@ -1573,20 +1602,22 @@ Partial Class frmMain
         '
         'dtpScheduleDate
         '
-        Me.dtpScheduleDate.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpScheduleDate.Font = New System.Drawing.Font("Inter", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpScheduleDate.Location = New System.Drawing.Point(8, 73)
         Me.dtpScheduleDate.Name = "dtpScheduleDate"
-        Me.dtpScheduleDate.Size = New System.Drawing.Size(196, 23)
+        Me.dtpScheduleDate.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.dtpScheduleDate.Size = New System.Drawing.Size(196, 21)
         Me.dtpScheduleDate.TabIndex = 1
         '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.CancelButton = Me.btnExitServices
         Me.ClientSize = New System.Drawing.Size(784, 481)
         Me.Controls.Add(Me.pnlServices)
-        Me.Controls.Add(Me.pnlCheckOut)
         Me.Controls.Add(Me.pnlSchedule)
+        Me.Controls.Add(Me.pnlCheckOut)
         Me.Controls.Add(Me.pnlNavbar)
         Me.Controls.Add(Me.pnlBarber)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -1752,4 +1783,6 @@ Partial Class frmMain
     Friend WithEvents radAfternoon7 As RadioButton
     Friend WithEvents radAfternoon6 As RadioButton
     Friend WithEvents radAfternoon5 As RadioButton
+    Friend WithEvents btnSubmit As Button
+    Friend WithEvents btnExitServices As Button
 End Class
