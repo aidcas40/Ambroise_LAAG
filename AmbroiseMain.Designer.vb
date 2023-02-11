@@ -24,6 +24,7 @@ Partial Class frmMain
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.pnlNavbar = New System.Windows.Forms.Panel()
+        Me.btnExitServices = New System.Windows.Forms.Button()
         Me.pctLogo = New System.Windows.Forms.PictureBox()
         Me.pnlHaircuts = New System.Windows.Forms.Panel()
         Me.btnCheckOut = New System.Windows.Forms.Button()
@@ -31,14 +32,13 @@ Partial Class frmMain
         Me.btnBarber = New System.Windows.Forms.Button()
         Me.btnServices = New System.Windows.Forms.Button()
         Me.pnlServices = New System.Windows.Forms.Panel()
-        Me.btnExitServices = New System.Windows.Forms.Button()
         Me.btnServicesReset = New System.Windows.Forms.Button()
         Me.pnlAddOns = New System.Windows.Forms.Panel()
         Me.lblAddOns = New System.Windows.Forms.Label()
         Me.lblHairDescr = New System.Windows.Forms.Label()
-        Me.rtxtHairDescr = New System.Windows.Forms.RichTextBox()
+        Me.rtxtHairDetails = New System.Windows.Forms.RichTextBox()
         Me.grbFade = New System.Windows.Forms.GroupBox()
-        Me.radNoneFade = New System.Windows.Forms.RadioButton()
+        Me.radNoFade = New System.Windows.Forms.RadioButton()
         Me.radLowFade = New System.Windows.Forms.RadioButton()
         Me.radMidFade = New System.Windows.Forms.RadioButton()
         Me.radHighFade = New System.Windows.Forms.RadioButton()
@@ -93,8 +93,8 @@ Partial Class frmMain
         Me.picBarber2 = New System.Windows.Forms.PictureBox()
         Me.picBarber1 = New System.Windows.Forms.PictureBox()
         Me.pnlCheckOut = New System.Windows.Forms.Panel()
+        Me.dtpExpDate = New System.Windows.Forms.DateTimePicker()
         Me.btnSubmit = New System.Windows.Forms.Button()
-        Me.MaskedTextBox1 = New System.Windows.Forms.MaskedTextBox()
         Me.pnlSummary = New System.Windows.Forms.Panel()
         Me.lblSummary = New System.Windows.Forms.Label()
         Me.lblSecurityCode = New System.Windows.Forms.Label()
@@ -113,7 +113,7 @@ Partial Class frmMain
         Me.txtCardName = New System.Windows.Forms.TextBox()
         Me.txtCardNum = New System.Windows.Forms.TextBox()
         Me.lblPaymentInfo = New System.Windows.Forms.Label()
-        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
+        Me.nudAge = New System.Windows.Forms.NumericUpDown()
         Me.cboCityTown = New System.Windows.Forms.ComboBox()
         Me.cboDistrict = New System.Windows.Forms.ComboBox()
         Me.txtAddress = New System.Windows.Forms.TextBox()
@@ -168,7 +168,7 @@ Partial Class frmMain
         CType(Me.picBarber1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlCheckOut.SuspendLayout()
         Me.pnlSummary.SuspendLayout()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nudAge, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlSchedule.SuspendLayout()
         Me.grbTimeSlots.SuspendLayout()
         Me.SuspendLayout()
@@ -189,6 +189,19 @@ Partial Class frmMain
         Me.pnlNavbar.Name = "pnlNavbar"
         Me.pnlNavbar.Size = New System.Drawing.Size(154, 481)
         Me.pnlNavbar.TabIndex = 0
+        '
+        'btnExitServices
+        '
+        Me.btnExitServices.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
+        Me.btnExitServices.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.btnExitServices.Font = New System.Drawing.Font("Inter", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExitServices.ForeColor = System.Drawing.Color.Black
+        Me.btnExitServices.Location = New System.Drawing.Point(12, 240)
+        Me.btnExitServices.Name = "btnExitServices"
+        Me.btnExitServices.Size = New System.Drawing.Size(129, 36)
+        Me.btnExitServices.TabIndex = 23
+        Me.btnExitServices.Text = "&Exit"
+        Me.btnExitServices.UseVisualStyleBackColor = False
         '
         'pctLogo
         '
@@ -287,19 +300,6 @@ Partial Class frmMain
         Me.pnlServices.Size = New System.Drawing.Size(626, 481)
         Me.pnlServices.TabIndex = 29
         '
-        'btnExitServices
-        '
-        Me.btnExitServices.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
-        Me.btnExitServices.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.btnExitServices.Font = New System.Drawing.Font("Inter", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnExitServices.ForeColor = System.Drawing.Color.Black
-        Me.btnExitServices.Location = New System.Drawing.Point(12, 240)
-        Me.btnExitServices.Name = "btnExitServices"
-        Me.btnExitServices.Size = New System.Drawing.Size(129, 36)
-        Me.btnExitServices.TabIndex = 23
-        Me.btnExitServices.Text = "Exit"
-        Me.btnExitServices.UseVisualStyleBackColor = False
-        '
         'btnServicesReset
         '
         Me.btnServicesReset.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
@@ -317,7 +317,7 @@ Partial Class frmMain
         Me.pnlAddOns.BackColor = System.Drawing.Color.FromArgb(CType(CType(152, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.pnlAddOns.Controls.Add(Me.lblAddOns)
         Me.pnlAddOns.Controls.Add(Me.lblHairDescr)
-        Me.pnlAddOns.Controls.Add(Me.rtxtHairDescr)
+        Me.pnlAddOns.Controls.Add(Me.rtxtHairDetails)
         Me.pnlAddOns.Controls.Add(Me.grbFade)
         Me.pnlAddOns.Controls.Add(Me.grbExtraServices)
         Me.pnlAddOns.Location = New System.Drawing.Point(464, 3)
@@ -349,19 +349,20 @@ Partial Class frmMain
         Me.lblHairDescr.Text = "Details for your haircut:"
         Me.lblHairDescr.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'rtxtHairDescr
+        'rtxtHairDetails
         '
-        Me.rtxtHairDescr.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.rtxtHairDescr.Location = New System.Drawing.Point(10, 354)
-        Me.rtxtHairDescr.MaxLength = 10000
-        Me.rtxtHairDescr.Name = "rtxtHairDescr"
-        Me.rtxtHairDescr.Size = New System.Drawing.Size(140, 69)
-        Me.rtxtHairDescr.TabIndex = 5
-        Me.rtxtHairDescr.Text = ""
+        Me.rtxtHairDetails.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.rtxtHairDetails.Font = New System.Drawing.Font("Inter", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rtxtHairDetails.Location = New System.Drawing.Point(10, 354)
+        Me.rtxtHairDetails.MaxLength = 500
+        Me.rtxtHairDetails.Name = "rtxtHairDetails"
+        Me.rtxtHairDetails.Size = New System.Drawing.Size(140, 71)
+        Me.rtxtHairDetails.TabIndex = 5
+        Me.rtxtHairDetails.Text = ""
         '
         'grbFade
         '
-        Me.grbFade.Controls.Add(Me.radNoneFade)
+        Me.grbFade.Controls.Add(Me.radNoFade)
         Me.grbFade.Controls.Add(Me.radLowFade)
         Me.grbFade.Controls.Add(Me.radMidFade)
         Me.grbFade.Controls.Add(Me.radHighFade)
@@ -377,17 +378,17 @@ Partial Class frmMain
         Me.grbFade.TabStop = False
         Me.grbFade.Text = "Fade Level"
         '
-        'radNoneFade
+        'radNoFade
         '
-        Me.radNoneFade.AutoSize = True
-        Me.radNoneFade.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.radNoneFade.Location = New System.Drawing.Point(7, 125)
-        Me.radNoneFade.Name = "radNoneFade"
-        Me.radNoneFade.Size = New System.Drawing.Size(79, 20)
-        Me.radNoneFade.TabIndex = 4
-        Me.radNoneFade.TabStop = True
-        Me.radNoneFade.Text = "No Fade"
-        Me.radNoneFade.UseVisualStyleBackColor = True
+        Me.radNoFade.AutoSize = True
+        Me.radNoFade.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.radNoFade.Location = New System.Drawing.Point(7, 125)
+        Me.radNoFade.Name = "radNoFade"
+        Me.radNoFade.Size = New System.Drawing.Size(79, 20)
+        Me.radNoFade.TabIndex = 4
+        Me.radNoFade.TabStop = True
+        Me.radNoFade.Text = "No Fade"
+        Me.radNoFade.UseVisualStyleBackColor = True
         '
         'radLowFade
         '
@@ -1023,8 +1024,8 @@ Partial Class frmMain
         '
         'pnlCheckOut
         '
+        Me.pnlCheckOut.Controls.Add(Me.dtpExpDate)
         Me.pnlCheckOut.Controls.Add(Me.btnSubmit)
-        Me.pnlCheckOut.Controls.Add(Me.MaskedTextBox1)
         Me.pnlCheckOut.Controls.Add(Me.pnlSummary)
         Me.pnlCheckOut.Controls.Add(Me.lblSecurityCode)
         Me.pnlCheckOut.Controls.Add(Me.lblExpDate)
@@ -1042,7 +1043,7 @@ Partial Class frmMain
         Me.pnlCheckOut.Controls.Add(Me.txtCardName)
         Me.pnlCheckOut.Controls.Add(Me.txtCardNum)
         Me.pnlCheckOut.Controls.Add(Me.lblPaymentInfo)
-        Me.pnlCheckOut.Controls.Add(Me.NumericUpDown1)
+        Me.pnlCheckOut.Controls.Add(Me.nudAge)
         Me.pnlCheckOut.Controls.Add(Me.cboCityTown)
         Me.pnlCheckOut.Controls.Add(Me.cboDistrict)
         Me.pnlCheckOut.Controls.Add(Me.txtAddress)
@@ -1054,27 +1055,28 @@ Partial Class frmMain
         Me.pnlCheckOut.Size = New System.Drawing.Size(626, 478)
         Me.pnlCheckOut.TabIndex = 7
         '
+        'dtpExpDate
+        '
+        Me.dtpExpDate.CalendarFont = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpExpDate.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpExpDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtpExpDate.Location = New System.Drawing.Point(12, 398)
+        Me.dtpExpDate.MaxDate = New Date(2100, 12, 31, 0, 0, 0, 0)
+        Me.dtpExpDate.MinDate = New Date(1950, 1, 1, 0, 0, 0, 0)
+        Me.dtpExpDate.Name = "dtpExpDate"
+        Me.dtpExpDate.Size = New System.Drawing.Size(136, 23)
+        Me.dtpExpDate.TabIndex = 42
+        '
         'btnSubmit
         '
+        Me.btnSubmit.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
         Me.btnSubmit.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSubmit.Location = New System.Drawing.Point(209, 449)
+        Me.btnSubmit.Location = New System.Drawing.Point(207, 443)
         Me.btnSubmit.Name = "btnSubmit"
         Me.btnSubmit.Size = New System.Drawing.Size(75, 23)
         Me.btnSubmit.TabIndex = 41
-        Me.btnSubmit.Text = "Submit"
-        Me.btnSubmit.UseVisualStyleBackColor = True
-        '
-        'MaskedTextBox1
-        '
-        Me.MaskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.MaskedTextBox1.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MaskedTextBox1.Location = New System.Drawing.Point(12, 398)
-        Me.MaskedTextBox1.Mask = "00/00/0000"
-        Me.MaskedTextBox1.Name = "MaskedTextBox1"
-        Me.MaskedTextBox1.Size = New System.Drawing.Size(135, 23)
-        Me.MaskedTextBox1.TabIndex = 40
-        Me.MaskedTextBox1.UseSystemPasswordChar = True
-        Me.MaskedTextBox1.ValidatingType = GetType(Date)
+        Me.btnSubmit.Text = "&Submit"
+        Me.btnSubmit.UseVisualStyleBackColor = False
         '
         'pnlSummary
         '
@@ -1211,9 +1213,11 @@ Partial Class frmMain
         Me.txtSecurityCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtSecurityCode.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtSecurityCode.Location = New System.Drawing.Point(163, 398)
+        Me.txtSecurityCode.MaxLength = 4
         Me.txtSecurityCode.Name = "txtSecurityCode"
         Me.txtSecurityCode.Size = New System.Drawing.Size(121, 23)
         Me.txtSecurityCode.TabIndex = 27
+        Me.txtSecurityCode.UseSystemPasswordChar = True
         '
         'mtxtPhoneNum
         '
@@ -1241,10 +1245,11 @@ Partial Class frmMain
         Me.txtCardNum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtCardNum.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtCardNum.Location = New System.Drawing.Point(12, 296)
-        Me.txtCardNum.MaxLength = 25
+        Me.txtCardNum.MaxLength = 19
         Me.txtCardNum.Name = "txtCardNum"
         Me.txtCardNum.Size = New System.Drawing.Size(270, 23)
         Me.txtCardNum.TabIndex = 23
+        Me.txtCardNum.UseSystemPasswordChar = True
         '
         'lblPaymentInfo
         '
@@ -1256,14 +1261,14 @@ Partial Class frmMain
         Me.lblPaymentInfo.TabIndex = 22
         Me.lblPaymentInfo.Text = "Payment Info."
         '
-        'NumericUpDown1
+        'nudAge
         '
-        Me.NumericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.NumericUpDown1.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NumericUpDown1.Location = New System.Drawing.Point(12, 211)
-        Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(121, 23)
-        Me.NumericUpDown1.TabIndex = 21
+        Me.nudAge.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.nudAge.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.nudAge.Location = New System.Drawing.Point(12, 211)
+        Me.nudAge.Name = "nudAge"
+        Me.nudAge.Size = New System.Drawing.Size(121, 23)
+        Me.nudAge.TabIndex = 21
         '
         'cboCityTown
         '
@@ -1271,7 +1276,7 @@ Partial Class frmMain
         Me.cboCityTown.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.cboCityTown.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboCityTown.FormattingEnabled = True
-        Me.cboCityTown.Items.AddRange(New Object() {"Belmopan", "Belize City", "Corozal Town", "Orange Walk Town", "Bunque Viejo", "Dangriga", "Punta Gorda", "San Ignacio", "San Pedro"})
+        Me.cboCityTown.Items.AddRange(New Object() {"Belmopan", "Belize City", "Corozal Town", "Orange Walk Town", "Bunque Viejo", "Dangriga", "Punta Gorda", "San Ignacio", "San Pedro", "NA"})
         Me.cboCityTown.Location = New System.Drawing.Point(149, 159)
         Me.cboCityTown.Name = "cboCityTown"
         Me.cboCityTown.Size = New System.Drawing.Size(135, 24)
@@ -1282,7 +1287,7 @@ Partial Class frmMain
         Me.cboDistrict.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.cboDistrict.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboDistrict.FormattingEnabled = True
-        Me.cboDistrict.Items.AddRange(New Object() {"Corozal", "Orange Walk", "Belize", "Cayo", "Stann Creek", "Toledo"})
+        Me.cboDistrict.Items.AddRange(New Object() {"Corozal", "Orange Walk", "Belize", "Cayo", "Stann Creek", "Toledo", "NA"})
         Me.cboDistrict.Location = New System.Drawing.Point(12, 159)
         Me.cboDistrict.Name = "cboDistrict"
         Me.cboDistrict.Size = New System.Drawing.Size(121, 24)
@@ -1293,7 +1298,7 @@ Partial Class frmMain
         Me.txtAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtAddress.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtAddress.Location = New System.Drawing.Point(12, 108)
-        Me.txtAddress.MaxLength = 50
+        Me.txtAddress.MaxLength = 30
         Me.txtAddress.Name = "txtAddress"
         Me.txtAddress.Size = New System.Drawing.Size(270, 23)
         Me.txtAddress.TabIndex = 3
@@ -1303,7 +1308,7 @@ Partial Class frmMain
         Me.txtLName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtLName.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtLName.Location = New System.Drawing.Point(149, 57)
-        Me.txtLName.MaxLength = 25
+        Me.txtLName.MaxLength = 15
         Me.txtLName.Name = "txtLName"
         Me.txtLName.Size = New System.Drawing.Size(135, 23)
         Me.txtLName.TabIndex = 2
@@ -1323,7 +1328,7 @@ Partial Class frmMain
         Me.txtFName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtFName.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtFName.Location = New System.Drawing.Point(12, 57)
-        Me.txtFName.MaxLength = 25
+        Me.txtFName.MaxLength = 15
         Me.txtFName.Name = "txtFName"
         Me.txtFName.Size = New System.Drawing.Size(121, 23)
         Me.txtFName.TabIndex = 0
@@ -1574,10 +1579,10 @@ Partial Class frmMain
         Me.radMorning1.ForeColor = System.Drawing.Color.White
         Me.radMorning1.Location = New System.Drawing.Point(12, 57)
         Me.radMorning1.Name = "radMorning1"
-        Me.radMorning1.Size = New System.Drawing.Size(96, 20)
+        Me.radMorning1.Size = New System.Drawing.Size(100, 20)
         Me.radMorning1.TabIndex = 5
         Me.radMorning1.TabStop = True
-        Me.radMorning1.Text = "8:00 - 8:30"
+        Me.radMorning1.Text = "8:00 - 8:30 "
         Me.radMorning1.UseVisualStyleBackColor = False
         '
         'lblChooseDate
@@ -1603,10 +1608,11 @@ Partial Class frmMain
         'dtpScheduleDate
         '
         Me.dtpScheduleDate.Font = New System.Drawing.Font("Inter", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpScheduleDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.dtpScheduleDate.Location = New System.Drawing.Point(8, 73)
         Me.dtpScheduleDate.Name = "dtpScheduleDate"
         Me.dtpScheduleDate.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.dtpScheduleDate.Size = New System.Drawing.Size(196, 21)
+        Me.dtpScheduleDate.Size = New System.Drawing.Size(119, 21)
         Me.dtpScheduleDate.TabIndex = 1
         '
         'frmMain
@@ -1617,9 +1623,9 @@ Partial Class frmMain
         Me.ClientSize = New System.Drawing.Size(784, 481)
         Me.Controls.Add(Me.pnlServices)
         Me.Controls.Add(Me.pnlSchedule)
+        Me.Controls.Add(Me.pnlBarber)
         Me.Controls.Add(Me.pnlCheckOut)
         Me.Controls.Add(Me.pnlNavbar)
-        Me.Controls.Add(Me.pnlBarber)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -1656,7 +1662,7 @@ Partial Class frmMain
         Me.pnlCheckOut.PerformLayout()
         Me.pnlSummary.ResumeLayout(False)
         Me.pnlSummary.PerformLayout()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nudAge, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlSchedule.ResumeLayout(False)
         Me.pnlSchedule.PerformLayout()
         Me.grbTimeSlots.ResumeLayout(False)
@@ -1701,7 +1707,7 @@ Partial Class frmMain
     Friend WithEvents radMohawkMullet As RadioButton
     Friend WithEvents pnlAddOns As Panel
     Friend WithEvents grbFade As GroupBox
-    Friend WithEvents radNoneFade As RadioButton
+    Friend WithEvents radNoFade As RadioButton
     Friend WithEvents radLowFade As RadioButton
     Friend WithEvents radMidFade As RadioButton
     Friend WithEvents radHighFade As RadioButton
@@ -1713,7 +1719,7 @@ Partial Class frmMain
     Friend WithEvents chkBeard As CheckBox
     Friend WithEvents chkMoustache As CheckBox
     Friend WithEvents lblHairDescr As Label
-    Friend WithEvents rtxtHairDescr As RichTextBox
+    Friend WithEvents rtxtHairDetails As RichTextBox
     Friend WithEvents lblChooseHaircut As Label
     Friend WithEvents lblAddOns As Label
     Friend WithEvents pnlServices As Panel
@@ -1734,7 +1740,7 @@ Partial Class frmMain
     Friend WithEvents txtFName As TextBox
     Friend WithEvents txtCardNum As TextBox
     Friend WithEvents lblPaymentInfo As Label
-    Friend WithEvents NumericUpDown1 As NumericUpDown
+    Friend WithEvents nudAge As NumericUpDown
     Friend WithEvents mtxtPhoneNum As MaskedTextBox
     Friend WithEvents txtCardName As TextBox
     Friend WithEvents txtSecurityCode As TextBox
@@ -1750,7 +1756,6 @@ Partial Class frmMain
     Friend WithEvents lblSecurityCode As Label
     Friend WithEvents lblExpDate As Label
     Friend WithEvents pnlSummary As Panel
-    Friend WithEvents MaskedTextBox1 As MaskedTextBox
     Friend WithEvents radBarber6 As RadioButton
     Friend WithEvents radBarber3 As RadioButton
     Friend WithEvents radBarber4 As RadioButton
@@ -1785,4 +1790,5 @@ Partial Class frmMain
     Friend WithEvents radAfternoon5 As RadioButton
     Friend WithEvents btnSubmit As Button
     Friend WithEvents btnExitServices As Button
+    Friend WithEvents dtpExpDate As DateTimePicker
 End Class
