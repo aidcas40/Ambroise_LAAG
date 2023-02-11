@@ -24,6 +24,7 @@ Partial Class frmOutput
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmOutput))
         Me.grbOHaircutDetails = New System.Windows.Forms.GroupBox()
+        Me.lblServiceTotalOut = New System.Windows.Forms.Label()
         Me.rtxtHaircutDetailsOut = New System.Windows.Forms.RichTextBox()
         Me.lblDateTimeOut = New System.Windows.Forms.Label()
         Me.lblBarberOut = New System.Windows.Forms.Label()
@@ -58,7 +59,6 @@ Partial Class frmOutput
         Me.lblOCardNum = New System.Windows.Forms.Label()
         Me.btnOExit = New System.Windows.Forms.Button()
         Me.btnOBack = New System.Windows.Forms.Button()
-        Me.lblServiceTotalOut = New System.Windows.Forms.Label()
         Me.grbOHaircutDetails.SuspendLayout()
         Me.grbOBillingAddress.SuspendLayout()
         Me.grbOPaymentInfo.SuspendLayout()
@@ -90,6 +90,15 @@ Partial Class frmOutput
         Me.grbOHaircutDetails.TabIndex = 0
         Me.grbOHaircutDetails.TabStop = False
         Me.grbOHaircutDetails.Text = "Haircut Details"
+        '
+        'lblServiceTotalOut
+        '
+        Me.lblServiceTotalOut.AutoSize = True
+        Me.lblServiceTotalOut.Location = New System.Drawing.Point(158, 210)
+        Me.lblServiceTotalOut.Name = "lblServiceTotalOut"
+        Me.lblServiceTotalOut.Size = New System.Drawing.Size(11, 16)
+        Me.lblServiceTotalOut.TabIndex = 18
+        Me.lblServiceTotalOut.Text = "l"
         '
         'rtxtHaircutDetailsOut
         '
@@ -232,7 +241,7 @@ Partial Class frmOutput
         Me.grbOBillingAddress.Controls.Add(Me.lblFullNameOut)
         Me.grbOBillingAddress.Controls.Add(Me.lblOFullName)
         Me.grbOBillingAddress.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.grbOBillingAddress.Location = New System.Drawing.Point(374, 15)
+        Me.grbOBillingAddress.Location = New System.Drawing.Point(374, 12)
         Me.grbOBillingAddress.Name = "grbOBillingAddress"
         Me.grbOBillingAddress.Size = New System.Drawing.Size(398, 221)
         Me.grbOBillingAddress.TabIndex = 1
@@ -426,15 +435,6 @@ Partial Class frmOutput
         Me.btnOBack.TabIndex = 4
         Me.btnOBack.Text = "&Back"
         Me.btnOBack.UseVisualStyleBackColor = False
-        '
-        'lblServiceTotalOut
-        '
-        Me.lblServiceTotalOut.AutoSize = True
-        Me.lblServiceTotalOut.Location = New System.Drawing.Point(158, 210)
-        Me.lblServiceTotalOut.Name = "lblServiceTotalOut"
-        Me.lblServiceTotalOut.Size = New System.Drawing.Size(11, 16)
-        Me.lblServiceTotalOut.TabIndex = 18
-        Me.lblServiceTotalOut.Text = "l"
         '
         'frmOutput
         '

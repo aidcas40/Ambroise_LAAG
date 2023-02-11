@@ -80,6 +80,9 @@ Partial Class frmMain
         Me.lblFrenchCropPrice = New System.Windows.Forms.Label()
         Me.radFrenchCrop = New System.Windows.Forms.RadioButton()
         Me.pnlBarber = New System.Windows.Forms.Panel()
+        Me.btnBarberBack = New System.Windows.Forms.Button()
+        Me.btnBarberNext = New System.Windows.Forms.Button()
+        Me.btnBarberReset = New System.Windows.Forms.Button()
         Me.pctBarber6Rating = New System.Windows.Forms.PictureBox()
         Me.pctBarber5Rating = New System.Windows.Forms.PictureBox()
         Me.pctBarber4Rating = New System.Windows.Forms.PictureBox()
@@ -105,7 +108,6 @@ Partial Class frmMain
         Me.dtpExpDate = New System.Windows.Forms.DateTimePicker()
         Me.btnSubmit = New System.Windows.Forms.Button()
         Me.pnlSummary = New System.Windows.Forms.Panel()
-        Me.lblSummary = New System.Windows.Forms.Label()
         Me.lblSecurityCode = New System.Windows.Forms.Label()
         Me.lblExpDate = New System.Windows.Forms.Label()
         Me.lblCardName = New System.Windows.Forms.Label()
@@ -155,9 +157,6 @@ Partial Class frmMain
         Me.lblChooseDate = New System.Windows.Forms.Label()
         Me.lblAppointment = New System.Windows.Forms.Label()
         Me.dtpScheduleDate = New System.Windows.Forms.DateTimePicker()
-        Me.btnBarberReset = New System.Windows.Forms.Button()
-        Me.btnBarberNext = New System.Windows.Forms.Button()
-        Me.btnBarberBack = New System.Windows.Forms.Button()
         Me.pnlNavbar.SuspendLayout()
         CType(Me.pctLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlServices.SuspendLayout()
@@ -188,7 +187,6 @@ Partial Class frmMain
         CType(Me.pctBarber2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pctBarber1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlCheckOut.SuspendLayout()
-        Me.pnlSummary.SuspendLayout()
         CType(Me.nudAge, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlSchedule.SuspendLayout()
         Me.grbTimeSlots.SuspendLayout()
@@ -329,7 +327,7 @@ Partial Class frmMain
         Me.btnServicesNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnServicesNext.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnServicesNext.ForeColor = System.Drawing.Color.Black
-        Me.btnServicesNext.Location = New System.Drawing.Point(457, 462)
+        Me.btnServicesNext.Location = New System.Drawing.Point(464, 462)
         Me.btnServicesNext.Name = "btnServicesNext"
         Me.btnServicesNext.Size = New System.Drawing.Size(75, 23)
         Me.btnServicesNext.TabIndex = 23
@@ -342,7 +340,7 @@ Partial Class frmMain
         Me.btnServicesReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnServicesReset.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnServicesReset.ForeColor = System.Drawing.Color.Black
-        Me.btnServicesReset.Location = New System.Drawing.Point(540, 462)
+        Me.btnServicesReset.Location = New System.Drawing.Point(548, 462)
         Me.btnServicesReset.Name = "btnServicesReset"
         Me.btnServicesReset.Size = New System.Drawing.Size(75, 23)
         Me.btnServicesReset.TabIndex = 22
@@ -898,7 +896,7 @@ Partial Class frmMain
         'pnlBarber
         '
         Me.pnlBarber.AutoScroll = True
-        Me.pnlBarber.AutoScrollMargin = New System.Drawing.Size(0, 30)
+        Me.pnlBarber.AutoScrollMargin = New System.Drawing.Size(0, 5)
         Me.pnlBarber.Controls.Add(Me.btnBarberBack)
         Me.pnlBarber.Controls.Add(Me.btnBarberNext)
         Me.pnlBarber.Controls.Add(Me.btnBarberReset)
@@ -925,6 +923,44 @@ Partial Class frmMain
         Me.pnlBarber.Name = "pnlBarber"
         Me.pnlBarber.Size = New System.Drawing.Size(626, 488)
         Me.pnlBarber.TabIndex = 29
+        '
+        'btnBarberBack
+        '
+        Me.btnBarberBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
+        Me.btnBarberBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBarberBack.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBarberBack.Location = New System.Drawing.Point(354, 500)
+        Me.btnBarberBack.Name = "btnBarberBack"
+        Me.btnBarberBack.Size = New System.Drawing.Size(75, 23)
+        Me.btnBarberBack.TabIndex = 38
+        Me.btnBarberBack.Text = "&Back"
+        Me.btnBarberBack.UseVisualStyleBackColor = False
+        '
+        'btnBarberNext
+        '
+        Me.btnBarberNext.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
+        Me.btnBarberNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBarberNext.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBarberNext.ForeColor = System.Drawing.Color.Black
+        Me.btnBarberNext.Location = New System.Drawing.Point(438, 500)
+        Me.btnBarberNext.Name = "btnBarberNext"
+        Me.btnBarberNext.Size = New System.Drawing.Size(75, 23)
+        Me.btnBarberNext.TabIndex = 37
+        Me.btnBarberNext.Text = "&Next"
+        Me.btnBarberNext.UseVisualStyleBackColor = False
+        '
+        'btnBarberReset
+        '
+        Me.btnBarberReset.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
+        Me.btnBarberReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBarberReset.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBarberReset.ForeColor = System.Drawing.Color.Black
+        Me.btnBarberReset.Location = New System.Drawing.Point(522, 500)
+        Me.btnBarberReset.Name = "btnBarberReset"
+        Me.btnBarberReset.Size = New System.Drawing.Size(75, 23)
+        Me.btnBarberReset.TabIndex = 36
+        Me.btnBarberReset.Text = "Reset"
+        Me.btnBarberReset.UseVisualStyleBackColor = False
         '
         'pctBarber6Rating
         '
@@ -1156,7 +1192,7 @@ Partial Class frmMain
         Me.pnlCheckOut.Controls.Add(Me.txtFName)
         Me.pnlCheckOut.Location = New System.Drawing.Point(154, 3)
         Me.pnlCheckOut.Name = "pnlCheckOut"
-        Me.pnlCheckOut.Size = New System.Drawing.Size(626, 485)
+        Me.pnlCheckOut.Size = New System.Drawing.Size(629, 485)
         Me.pnlCheckOut.TabIndex = 7
         '
         'btnCheckOutReset
@@ -1164,7 +1200,7 @@ Partial Class frmMain
         Me.btnCheckOutReset.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
         Me.btnCheckOutReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCheckOutReset.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCheckOutReset.Location = New System.Drawing.Point(449, 443)
+        Me.btnCheckOutReset.Location = New System.Drawing.Point(464, 462)
         Me.btnCheckOutReset.Name = "btnCheckOutReset"
         Me.btnCheckOutReset.Size = New System.Drawing.Size(75, 23)
         Me.btnCheckOutReset.TabIndex = 44
@@ -1176,7 +1212,7 @@ Partial Class frmMain
         Me.btnCheckOutBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
         Me.btnCheckOutBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCheckOutBack.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCheckOutBack.Location = New System.Drawing.Point(356, 443)
+        Me.btnCheckOutBack.Location = New System.Drawing.Point(380, 462)
         Me.btnCheckOutBack.Name = "btnCheckOutBack"
         Me.btnCheckOutBack.Size = New System.Drawing.Size(75, 23)
         Me.btnCheckOutBack.TabIndex = 43
@@ -1201,7 +1237,7 @@ Partial Class frmMain
         Me.btnSubmit.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
         Me.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSubmit.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSubmit.Location = New System.Drawing.Point(542, 443)
+        Me.btnSubmit.Location = New System.Drawing.Point(548, 462)
         Me.btnSubmit.Name = "btnSubmit"
         Me.btnSubmit.Size = New System.Drawing.Size(75, 23)
         Me.btnSubmit.TabIndex = 41
@@ -1211,22 +1247,10 @@ Partial Class frmMain
         'pnlSummary
         '
         Me.pnlSummary.BackColor = System.Drawing.Color.FromArgb(CType(CType(152, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.pnlSummary.Controls.Add(Me.lblSummary)
-        Me.pnlSummary.Location = New System.Drawing.Point(356, 0)
+        Me.pnlSummary.Location = New System.Drawing.Point(554, 0)
         Me.pnlSummary.Name = "pnlSummary"
-        Me.pnlSummary.Size = New System.Drawing.Size(273, 421)
+        Me.pnlSummary.Size = New System.Drawing.Size(75, 421)
         Me.pnlSummary.TabIndex = 39
-        '
-        'lblSummary
-        '
-        Me.lblSummary.AutoSize = True
-        Me.lblSummary.Font = New System.Drawing.Font("Inter", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSummary.ForeColor = System.Drawing.Color.White
-        Me.lblSummary.Location = New System.Drawing.Point(12, 9)
-        Me.lblSummary.Name = "lblSummary"
-        Me.lblSummary.Size = New System.Drawing.Size(84, 19)
-        Me.lblSummary.TabIndex = 2
-        Me.lblSummary.Text = "Summary"
         '
         'lblSecurityCode
         '
@@ -1482,7 +1506,7 @@ Partial Class frmMain
         Me.btnScheduleBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
         Me.btnScheduleBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnScheduleBack.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnScheduleBack.Location = New System.Drawing.Point(339, 446)
+        Me.btnScheduleBack.Location = New System.Drawing.Point(380, 462)
         Me.btnScheduleBack.Name = "btnScheduleBack"
         Me.btnScheduleBack.Size = New System.Drawing.Size(75, 23)
         Me.btnScheduleBack.TabIndex = 33
@@ -1494,7 +1518,7 @@ Partial Class frmMain
         Me.btnScheduleNext.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
         Me.btnScheduleNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnScheduleNext.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnScheduleNext.Location = New System.Drawing.Point(435, 446)
+        Me.btnScheduleNext.Location = New System.Drawing.Point(464, 462)
         Me.btnScheduleNext.Name = "btnScheduleNext"
         Me.btnScheduleNext.Size = New System.Drawing.Size(75, 23)
         Me.btnScheduleNext.TabIndex = 32
@@ -1506,7 +1530,7 @@ Partial Class frmMain
         Me.btnScheduleReset.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
         Me.btnScheduleReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnScheduleReset.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnScheduleReset.Location = New System.Drawing.Point(531, 446)
+        Me.btnScheduleReset.Location = New System.Drawing.Point(548, 462)
         Me.btnScheduleReset.Name = "btnScheduleReset"
         Me.btnScheduleReset.Size = New System.Drawing.Size(75, 23)
         Me.btnScheduleReset.TabIndex = 31
@@ -1787,44 +1811,6 @@ Partial Class frmMain
         Me.dtpScheduleDate.TabIndex = 1
         Me.dtpScheduleDate.Value = New Date(2023, 2, 11, 0, 0, 0, 0)
         '
-        'btnBarberReset
-        '
-        Me.btnBarberReset.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
-        Me.btnBarberReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBarberReset.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBarberReset.ForeColor = System.Drawing.Color.Black
-        Me.btnBarberReset.Location = New System.Drawing.Point(522, 495)
-        Me.btnBarberReset.Name = "btnBarberReset"
-        Me.btnBarberReset.Size = New System.Drawing.Size(75, 23)
-        Me.btnBarberReset.TabIndex = 36
-        Me.btnBarberReset.Text = "Reset"
-        Me.btnBarberReset.UseVisualStyleBackColor = False
-        '
-        'btnBarberNext
-        '
-        Me.btnBarberNext.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
-        Me.btnBarberNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBarberNext.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBarberNext.ForeColor = System.Drawing.Color.Black
-        Me.btnBarberNext.Location = New System.Drawing.Point(434, 495)
-        Me.btnBarberNext.Name = "btnBarberNext"
-        Me.btnBarberNext.Size = New System.Drawing.Size(75, 23)
-        Me.btnBarberNext.TabIndex = 37
-        Me.btnBarberNext.Text = "&Next"
-        Me.btnBarberNext.UseVisualStyleBackColor = False
-        '
-        'btnBarberBack
-        '
-        Me.btnBarberBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
-        Me.btnBarberBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBarberBack.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBarberBack.Location = New System.Drawing.Point(346, 495)
-        Me.btnBarberBack.Name = "btnBarberBack"
-        Me.btnBarberBack.Size = New System.Drawing.Size(75, 23)
-        Me.btnBarberBack.TabIndex = 38
-        Me.btnBarberBack.Text = "&Back"
-        Me.btnBarberBack.UseVisualStyleBackColor = False
-        '
         'frmMain
         '
         Me.AcceptButton = Me.btnSubmit
@@ -1832,10 +1818,10 @@ Partial Class frmMain
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.btnExitServices
         Me.ClientSize = New System.Drawing.Size(784, 491)
-        Me.Controls.Add(Me.pnlCheckOut)
         Me.Controls.Add(Me.pnlServices)
         Me.Controls.Add(Me.pnlBarber)
         Me.Controls.Add(Me.pnlSchedule)
+        Me.Controls.Add(Me.pnlCheckOut)
         Me.Controls.Add(Me.pnlNavbar)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmMain"
@@ -1877,8 +1863,6 @@ Partial Class frmMain
         CType(Me.pctBarber1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlCheckOut.ResumeLayout(False)
         Me.pnlCheckOut.PerformLayout()
-        Me.pnlSummary.ResumeLayout(False)
-        Me.pnlSummary.PerformLayout()
         CType(Me.nudAge, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlSchedule.ResumeLayout(False)
         Me.pnlSchedule.PerformLayout()
@@ -1980,7 +1964,6 @@ Partial Class frmMain
     Friend WithEvents radBarber2 As RadioButton
     Friend WithEvents pnlSchedule As Panel
     Friend WithEvents dtpScheduleDate As DateTimePicker
-    Friend WithEvents lblSummary As Label
     Friend WithEvents lblChooseBarber As Label
     Friend WithEvents pctLogo As PictureBox
     Friend WithEvents btnServicesReset As Button

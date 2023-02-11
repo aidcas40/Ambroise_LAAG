@@ -199,35 +199,27 @@ Public Class frmMain
         If radBuzzCut.Checked Then
             strHaircut = radBuzzCut.Text
             dbHaircutPrice = 25
-
         ElseIf radFrenchCrop.Checked Then
             strHaircut = radFrenchCrop.Text
             dbHaircutPrice = 20
-
         ElseIf radQuiff.Checked Then
             strHaircut = radQuiff.Text
             dbHaircutPrice = 35
-
         ElseIf radPompadour.Checked Then
             strHaircut = radPompadour.Text
             dbHaircutPrice = 30
-
         ElseIf radCombOver.Checked Then
             strHaircut = radCombOver.Text
             dbHaircutPrice = 25
-
         ElseIf radSlickBack.Checked Then
             strHaircut = radSlickBack.Text
             dbHaircutPrice = 25
-
         ElseIf radScissor.Checked Then
             strHaircut = radScissor.Text
             dbHaircutPrice = 23
-
         ElseIf radMohawkMullet.Checked Then
             strHaircut = radMohawkMullet.Text
             dbHaircutPrice = 27
-
         ElseIf radFringe.Checked Then
             strHaircut = radFringe.Text
             dbHaircutPrice = 20
@@ -238,22 +230,18 @@ Public Class frmMain
             strMoustache = chkMoustache.Text
             dbMoustachePrice = 3
         End If
-
         If chkBeard.Checked Then
             strBeard = chkBeard.Text
             dbBeardPrice = 5
         End If
-
         If chkEyebrow.Checked Then
             strEyebrow = chkEyebrow.Text
             dbEyebrowPrice = 10
         End If
-
         If chkFaceMask.Checked Then
             strFaceMask = chkFaceMask.Text
             dbFaceMaskPrice = 15
         End If
-
         If chkShapeUp.Checked Then
             strShapeUp = chkShapeUp.Text
             dbMoustachePrice = 10
@@ -263,19 +251,15 @@ Public Class frmMain
         If radTaperFade.Checked Then
             strFadeLevel = radTaperFade.Text
             dbFadeLevelPrice = 10
-
         ElseIf radHighFade.Checked Then
             strFadeLevel = radHighFade.Text
             dbFadeLevelPrice = 10
-
         ElseIf radMidFade.Checked Then
             strFadeLevel = radMidFade.Text
             dbFadeLevelPrice = 7
-
         ElseIf radLowFade.Checked Then
             strFadeLevel = radLowFade.Text
             dbFadeLevelPrice = 5
-
         ElseIf radNoFade.Checked Then
             strFadeLevel = radNoFade.Text
             dbFadeLevelPrice = 0
@@ -286,22 +270,16 @@ Public Class frmMain
         'Checking which baber the customer picked 
         If radBarber1.Checked Then
             strBarber = radBarber1.Text
-
         ElseIf radBarber2.Checked Then
             strBarber = radBarber2.Text
-
         ElseIf radBarber3.Checked Then
             strBarber = radBarber3.Text
-
         ElseIf radBarber4.Checked Then
             strBarber = radBarber4.Text
-
         ElseIf radBarber5.Checked Then
             strBarber = radBarber5.Text
-
         ElseIf radBarber6.Checked Then
             strBarber = radBarber6.Text
-
         End If
 
         strScheduleDate = dtpScheduleDate.Text 'Stores Customer Schedule Date
@@ -309,52 +287,36 @@ Public Class frmMain
         'Checking which time slot the customer picked 
         If radMorning1.Checked Then
             strTimeSlot = radMorning1.Text
-
         ElseIf radMorning2.Checked Then
             strTimeSlot = radMorning2.Text
-
         ElseIf radMorning3.Checked Then
             strTimeSlot = radMorning3.Text
-
         ElseIf radMorning4.Checked Then
             strTimeSlot = radMorning4.Text
-
         ElseIf radMorning5.Checked Then
             strTimeSlot = radMorning5.Text
-
         ElseIf radMorning6.Checked Then
             strTimeSlot = radMorning6.Text
-
         ElseIf radMorning7.Checked Then
             strTimeSlot = radMorning7.Text
-
         ElseIf radMorning8.Checked Then
             strTimeSlot = radMorning8.Text
-
         ElseIf radAfternoon1.Checked Then
             strTimeSlot = radAfternoon1.Text
-
         ElseIf radAfternoon2.Checked Then
             strTimeSlot = radAfternoon2.Text
-
         ElseIf radAfternoon3.Checked Then
             strTimeSlot = radAfternoon3.Text
-
         ElseIf radAfternoon4.Checked Then
             strTimeSlot = radAfternoon4.Text
-
         ElseIf radAfternoon5.Checked Then
             strTimeSlot = radAfternoon5.Text
-
         ElseIf radAfternoon6.Checked Then
             strTimeSlot = radAfternoon6.Text
-
         ElseIf radAfternoon7.Checked Then
             strTimeSlot = radAfternoon7.Text
-
         ElseIf radAfternoon8.Checked Then
             strTimeSlot = radAfternoon8.Text
-
         End If
 
         strFName = txtFName.Text & " " & txtLName.Text 'Stores Full Name of the Customer
@@ -368,7 +330,6 @@ Public Class frmMain
         strSecurityCode = txtSecurityCode.Text 'Stores Customer Card Security Code
 
         frmOutput.Show()
-        Me.Close()
-
+        Me.Hide()
     End Sub
 End Class
