@@ -86,7 +86,7 @@ Partial Class frmOutput
         Me.grbOHaircutDetails.ForeColor = System.Drawing.Color.White
         Me.grbOHaircutDetails.Location = New System.Drawing.Point(12, 12)
         Me.grbOHaircutDetails.Name = "grbOHaircutDetails"
-        Me.grbOHaircutDetails.Size = New System.Drawing.Size(345, 437)
+        Me.grbOHaircutDetails.Size = New System.Drawing.Size(356, 437)
         Me.grbOHaircutDetails.TabIndex = 0
         Me.grbOHaircutDetails.TabStop = False
         Me.grbOHaircutDetails.Text = "Haircut Details"
@@ -102,11 +102,11 @@ Partial Class frmOutput
         '
         'rtxtHaircutDetailsOut
         '
-        Me.rtxtHaircutDetailsOut.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.rtxtHaircutDetailsOut.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.rtxtHaircutDetailsOut.Location = New System.Drawing.Point(12, 339)
         Me.rtxtHaircutDetailsOut.Name = "rtxtHaircutDetailsOut"
         Me.rtxtHaircutDetailsOut.ReadOnly = True
-        Me.rtxtHaircutDetailsOut.Size = New System.Drawing.Size(302, 92)
+        Me.rtxtHaircutDetailsOut.Size = New System.Drawing.Size(338, 92)
         Me.rtxtHaircutDetailsOut.TabIndex = 17
         Me.rtxtHaircutDetailsOut.TabStop = False
         Me.rtxtHaircutDetailsOut.Text = ""
@@ -160,7 +160,7 @@ Partial Class frmOutput
         'lblExtraServicesPriceOut
         '
         Me.lblExtraServicesPriceOut.AutoSize = True
-        Me.lblExtraServicesPriceOut.Location = New System.Drawing.Point(158, 97)
+        Me.lblExtraServicesPriceOut.Location = New System.Drawing.Point(158, 125)
         Me.lblExtraServicesPriceOut.Name = "lblExtraServicesPriceOut"
         Me.lblExtraServicesPriceOut.Size = New System.Drawing.Size(11, 16)
         Me.lblExtraServicesPriceOut.TabIndex = 9
@@ -169,7 +169,7 @@ Partial Class frmOutput
         'lblExtraServicesOut
         '
         Me.lblExtraServicesOut.AutoSize = True
-        Me.lblExtraServicesOut.Location = New System.Drawing.Point(12, 97)
+        Me.lblExtraServicesOut.Location = New System.Drawing.Point(12, 125)
         Me.lblExtraServicesOut.Name = "lblExtraServicesOut"
         Me.lblExtraServicesOut.Size = New System.Drawing.Size(11, 16)
         Me.lblExtraServicesOut.TabIndex = 8
@@ -178,7 +178,7 @@ Partial Class frmOutput
         'lblFadeLevelPriceOut
         '
         Me.lblFadeLevelPriceOut.AutoSize = True
-        Me.lblFadeLevelPriceOut.Location = New System.Drawing.Point(158, 180)
+        Me.lblFadeLevelPriceOut.Location = New System.Drawing.Point(158, 97)
         Me.lblFadeLevelPriceOut.Name = "lblFadeLevelPriceOut"
         Me.lblFadeLevelPriceOut.Size = New System.Drawing.Size(11, 16)
         Me.lblFadeLevelPriceOut.TabIndex = 7
@@ -187,7 +187,7 @@ Partial Class frmOutput
         'lblFadeLevelOut
         '
         Me.lblFadeLevelOut.AutoSize = True
-        Me.lblFadeLevelOut.Location = New System.Drawing.Point(12, 180)
+        Me.lblFadeLevelOut.Location = New System.Drawing.Point(12, 97)
         Me.lblFadeLevelOut.Name = "lblFadeLevelOut"
         Me.lblFadeLevelOut.Size = New System.Drawing.Size(11, 16)
         Me.lblFadeLevelOut.TabIndex = 6
@@ -444,7 +444,7 @@ Partial Class frmOutput
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.btnOExit
-        Me.ClientSize = New System.Drawing.Size(784, 481)
+        Me.ClientSize = New System.Drawing.Size(784, 491)
         Me.Controls.Add(Me.btnOBack)
         Me.Controls.Add(Me.btnOExit)
         Me.Controls.Add(Me.grbOPaymentInfo)

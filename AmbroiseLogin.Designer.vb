@@ -28,6 +28,8 @@ Partial Class frmLogin
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.pctLogoLogin = New System.Windows.Forms.PictureBox()
         Me.btnLogin = New System.Windows.Forms.Button()
+        Me.lblEmail = New System.Windows.Forms.Label()
+        Me.lblPassword = New System.Windows.Forms.Label()
         CType(Me.pctLogoLogin, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -35,7 +37,7 @@ Partial Class frmLogin
         '
         Me.lblLogin.AutoSize = True
         Me.lblLogin.Font = New System.Drawing.Font("Inter", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLogin.Location = New System.Drawing.Point(281, 145)
+        Me.lblLogin.Location = New System.Drawing.Point(281, 141)
         Me.lblLogin.Name = "lblLogin"
         Me.lblLogin.Size = New System.Drawing.Size(258, 25)
         Me.lblLogin.TabIndex = 0
@@ -45,8 +47,8 @@ Partial Class frmLogin
         '
         Me.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtEmail.Font = New System.Drawing.Font("Inter", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEmail.Location = New System.Drawing.Point(263, 195)
-        Me.txtEmail.MaxLength = 30
+        Me.txtEmail.Location = New System.Drawing.Point(263, 214)
+        Me.txtEmail.MaxLength = 20
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(295, 26)
         Me.txtEmail.TabIndex = 1
@@ -56,7 +58,7 @@ Partial Class frmLogin
         Me.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtPassword.Font = New System.Drawing.Font("Inter", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPassword.ForeColor = System.Drawing.Color.Black
-        Me.txtPassword.Location = New System.Drawing.Point(263, 257)
+        Me.txtPassword.Location = New System.Drawing.Point(263, 278)
         Me.txtPassword.MaxLength = 20
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(295, 26)
@@ -78,12 +80,32 @@ Partial Class frmLogin
         Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogin.Font = New System.Drawing.Font("Inter", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.Color.Black
-        Me.btnLogin.Location = New System.Drawing.Point(352, 308)
+        Me.btnLogin.Location = New System.Drawing.Point(352, 325)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(117, 32)
         Me.btnLogin.TabIndex = 3
         Me.btnLogin.Text = "Login"
         Me.btnLogin.UseVisualStyleBackColor = False
+        '
+        'lblEmail
+        '
+        Me.lblEmail.AutoSize = True
+        Me.lblEmail.Font = New System.Drawing.Font("Inter", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEmail.Location = New System.Drawing.Point(263, 191)
+        Me.lblEmail.Name = "lblEmail"
+        Me.lblEmail.Size = New System.Drawing.Size(55, 20)
+        Me.lblEmail.TabIndex = 4
+        Me.lblEmail.Text = "Email"
+        '
+        'lblPassword
+        '
+        Me.lblPassword.AutoSize = True
+        Me.lblPassword.Font = New System.Drawing.Font("Inter", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPassword.Location = New System.Drawing.Point(263, 255)
+        Me.lblPassword.Name = "lblPassword"
+        Me.lblPassword.Size = New System.Drawing.Size(92, 20)
+        Me.lblPassword.TabIndex = 5
+        Me.lblPassword.Text = "Password"
         '
         'frmLogin
         '
@@ -91,6 +113,8 @@ Partial Class frmLogin
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(784, 491)
+        Me.Controls.Add(Me.lblPassword)
+        Me.Controls.Add(Me.lblEmail)
         Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.pctLogoLogin)
         Me.Controls.Add(Me.txtPassword)
@@ -113,4 +137,6 @@ Partial Class frmLogin
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents pctLogoLogin As PictureBox
     Friend WithEvents btnLogin As Button
+    Friend WithEvents lblEmail As Label
+    Friend WithEvents lblPassword As Label
 End Class
