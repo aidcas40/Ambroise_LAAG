@@ -108,6 +108,7 @@ Partial Class frmOutput
         Me.rtxtHaircutDetailsOut.ReadOnly = True
         Me.rtxtHaircutDetailsOut.Size = New System.Drawing.Size(302, 92)
         Me.rtxtHaircutDetailsOut.TabIndex = 17
+        Me.rtxtHaircutDetailsOut.TabStop = False
         Me.rtxtHaircutDetailsOut.Text = ""
         '
         'lblDateTimeOut
@@ -417,22 +418,24 @@ Partial Class frmOutput
         '
         Me.btnOExit.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
         Me.btnOExit.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.btnOExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnOExit.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnOExit.Location = New System.Drawing.Point(697, 455)
         Me.btnOExit.Name = "btnOExit"
         Me.btnOExit.Size = New System.Drawing.Size(75, 23)
-        Me.btnOExit.TabIndex = 3
+        Me.btnOExit.TabIndex = 1
         Me.btnOExit.Text = "&Exit"
         Me.btnOExit.UseVisualStyleBackColor = False
         '
         'btnOBack
         '
         Me.btnOBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
+        Me.btnOBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnOBack.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnOBack.Location = New System.Drawing.Point(616, 455)
         Me.btnOBack.Name = "btnOBack"
         Me.btnOBack.Size = New System.Drawing.Size(75, 23)
-        Me.btnOBack.TabIndex = 4
+        Me.btnOBack.TabIndex = 0
         Me.btnOBack.Text = "&Back"
         Me.btnOBack.UseVisualStyleBackColor = False
         '

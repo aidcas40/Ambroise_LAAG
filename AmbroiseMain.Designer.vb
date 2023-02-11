@@ -219,7 +219,7 @@ Partial Class frmMain
         Me.btnExitServices.Location = New System.Drawing.Point(12, 240)
         Me.btnExitServices.Name = "btnExitServices"
         Me.btnExitServices.Size = New System.Drawing.Size(129, 36)
-        Me.btnExitServices.TabIndex = 23
+        Me.btnExitServices.TabIndex = 4
         Me.btnExitServices.Text = "&Exit"
         Me.btnExitServices.UseVisualStyleBackColor = False
         '
@@ -327,10 +327,10 @@ Partial Class frmMain
         Me.btnServicesNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnServicesNext.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnServicesNext.ForeColor = System.Drawing.Color.Black
-        Me.btnServicesNext.Location = New System.Drawing.Point(464, 462)
+        Me.btnServicesNext.Location = New System.Drawing.Point(548, 462)
         Me.btnServicesNext.Name = "btnServicesNext"
         Me.btnServicesNext.Size = New System.Drawing.Size(75, 23)
-        Me.btnServicesNext.TabIndex = 23
+        Me.btnServicesNext.TabIndex = 0
         Me.btnServicesNext.Text = "&Next"
         Me.btnServicesNext.UseVisualStyleBackColor = False
         '
@@ -340,10 +340,10 @@ Partial Class frmMain
         Me.btnServicesReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnServicesReset.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnServicesReset.ForeColor = System.Drawing.Color.Black
-        Me.btnServicesReset.Location = New System.Drawing.Point(548, 462)
+        Me.btnServicesReset.Location = New System.Drawing.Point(464, 462)
         Me.btnServicesReset.Name = "btnServicesReset"
         Me.btnServicesReset.Size = New System.Drawing.Size(75, 23)
-        Me.btnServicesReset.TabIndex = 22
+        Me.btnServicesReset.TabIndex = 1
         Me.btnServicesReset.Text = "Reset"
         Me.btnServicesReset.UseVisualStyleBackColor = False
         '
@@ -392,7 +392,7 @@ Partial Class frmMain
         Me.rtxtHairDetails.MaxLength = 500
         Me.rtxtHairDetails.Name = "rtxtHairDetails"
         Me.rtxtHairDetails.Size = New System.Drawing.Size(140, 71)
-        Me.rtxtHairDetails.TabIndex = 5
+        Me.rtxtHairDetails.TabIndex = 9
         Me.rtxtHairDetails.Text = ""
         '
         'grbFade
@@ -499,7 +499,7 @@ Partial Class frmMain
         Me.chkShapeUp.Location = New System.Drawing.Point(7, 109)
         Me.chkShapeUp.Name = "chkShapeUp"
         Me.chkShapeUp.Size = New System.Drawing.Size(85, 20)
-        Me.chkShapeUp.TabIndex = 4
+        Me.chkShapeUp.TabIndex = 7
         Me.chkShapeUp.Text = "Shape Up"
         Me.chkShapeUp.UseVisualStyleBackColor = True
         '
@@ -511,7 +511,7 @@ Partial Class frmMain
         Me.chkFaceMask.Location = New System.Drawing.Point(7, 87)
         Me.chkFaceMask.Name = "chkFaceMask"
         Me.chkFaceMask.Size = New System.Drawing.Size(91, 20)
-        Me.chkFaceMask.TabIndex = 3
+        Me.chkFaceMask.TabIndex = 6
         Me.chkFaceMask.Text = "Face Mask"
         Me.chkFaceMask.UseVisualStyleBackColor = True
         '
@@ -523,7 +523,7 @@ Partial Class frmMain
         Me.chkEyebrow.Location = New System.Drawing.Point(7, 65)
         Me.chkEyebrow.Name = "chkEyebrow"
         Me.chkEyebrow.Size = New System.Drawing.Size(133, 20)
-        Me.chkEyebrow.TabIndex = 2
+        Me.chkEyebrow.TabIndex = 5
         Me.chkEyebrow.Text = "Eyebrow Shaping"
         Me.chkEyebrow.UseVisualStyleBackColor = True
         '
@@ -535,7 +535,7 @@ Partial Class frmMain
         Me.chkBeard.Location = New System.Drawing.Point(7, 43)
         Me.chkBeard.Name = "chkBeard"
         Me.chkBeard.Size = New System.Drawing.Size(90, 20)
-        Me.chkBeard.TabIndex = 1
+        Me.chkBeard.TabIndex = 4
         Me.chkBeard.Text = "Beard Trim"
         Me.chkBeard.UseVisualStyleBackColor = True
         '
@@ -547,7 +547,7 @@ Partial Class frmMain
         Me.chkMoustache.Location = New System.Drawing.Point(7, 21)
         Me.chkMoustache.Name = "chkMoustache"
         Me.chkMoustache.Size = New System.Drawing.Size(124, 20)
-        Me.chkMoustache.TabIndex = 0
+        Me.chkMoustache.TabIndex = 3
         Me.chkMoustache.Text = "Moustache Trim"
         Me.chkMoustache.UseVisualStyleBackColor = True
         '
@@ -626,7 +626,7 @@ Partial Class frmMain
         Me.radFringe.Location = New System.Drawing.Point(327, 616)
         Me.radFringe.Name = "radFringe"
         Me.radFringe.Size = New System.Drawing.Size(74, 23)
-        Me.radFringe.TabIndex = 16
+        Me.radFringe.TabIndex = 8
         Me.radFringe.TabStop = True
         Me.radFringe.Text = "Fringe"
         Me.radFringe.UseVisualStyleBackColor = True
@@ -658,7 +658,7 @@ Partial Class frmMain
         Me.radMohawkMullet.Location = New System.Drawing.Point(152, 616)
         Me.radMohawkMullet.Name = "radMohawkMullet"
         Me.radMohawkMullet.Size = New System.Drawing.Size(142, 23)
-        Me.radMohawkMullet.TabIndex = 14
+        Me.radMohawkMullet.TabIndex = 7
         Me.radMohawkMullet.TabStop = True
         Me.radMohawkMullet.Text = "Mohawk Mullet"
         Me.radMohawkMullet.UseVisualStyleBackColor = True
@@ -690,7 +690,7 @@ Partial Class frmMain
         Me.radScissor.Location = New System.Drawing.Point(35, 616)
         Me.radScissor.Name = "radScissor"
         Me.radScissor.Size = New System.Drawing.Size(82, 23)
-        Me.radScissor.TabIndex = 12
+        Me.radScissor.TabIndex = 6
         Me.radScissor.TabStop = True
         Me.radScissor.Text = "Scissor"
         Me.radScissor.UseVisualStyleBackColor = True
@@ -742,7 +742,7 @@ Partial Class frmMain
         Me.radCombOver.Location = New System.Drawing.Point(163, 400)
         Me.radCombOver.Name = "radCombOver"
         Me.radCombOver.Size = New System.Drawing.Size(114, 23)
-        Me.radCombOver.TabIndex = 8
+        Me.radCombOver.TabIndex = 4
         Me.radCombOver.TabStop = True
         Me.radCombOver.Text = "Comb Over"
         Me.radCombOver.UseVisualStyleBackColor = True
@@ -764,7 +764,7 @@ Partial Class frmMain
         Me.radPompadour.Location = New System.Drawing.Point(19, 400)
         Me.radPompadour.Name = "radPompadour"
         Me.radPompadour.Size = New System.Drawing.Size(115, 23)
-        Me.radPompadour.TabIndex = 6
+        Me.radPompadour.TabIndex = 3
         Me.radPompadour.TabStop = True
         Me.radPompadour.Text = "Pompadour"
         Me.radPompadour.UseVisualStyleBackColor = True
@@ -776,7 +776,7 @@ Partial Class frmMain
         Me.radSlickBack.Location = New System.Drawing.Point(312, 400)
         Me.radSlickBack.Name = "radSlickBack"
         Me.radSlickBack.Size = New System.Drawing.Size(105, 23)
-        Me.radSlickBack.TabIndex = 10
+        Me.radSlickBack.TabIndex = 5
         Me.radSlickBack.TabStop = True
         Me.radSlickBack.Text = "Slick Back"
         Me.radSlickBack.UseVisualStyleBackColor = True
@@ -864,7 +864,7 @@ Partial Class frmMain
         Me.radQuiff.Location = New System.Drawing.Point(332, 183)
         Me.radQuiff.Name = "radQuiff"
         Me.radQuiff.Size = New System.Drawing.Size(64, 23)
-        Me.radQuiff.TabIndex = 4
+        Me.radQuiff.TabIndex = 2
         Me.radQuiff.TabStop = True
         Me.radQuiff.Text = "Quiff"
         Me.radQuiff.UseVisualStyleBackColor = False
@@ -888,7 +888,7 @@ Partial Class frmMain
         Me.radFrenchCrop.Location = New System.Drawing.Point(160, 184)
         Me.radFrenchCrop.Name = "radFrenchCrop"
         Me.radFrenchCrop.Size = New System.Drawing.Size(121, 23)
-        Me.radFrenchCrop.TabIndex = 2
+        Me.radFrenchCrop.TabIndex = 1
         Me.radFrenchCrop.TabStop = True
         Me.radFrenchCrop.Text = "French Crop"
         Me.radFrenchCrop.UseVisualStyleBackColor = False
@@ -922,17 +922,17 @@ Partial Class frmMain
         Me.pnlBarber.Location = New System.Drawing.Point(157, 0)
         Me.pnlBarber.Name = "pnlBarber"
         Me.pnlBarber.Size = New System.Drawing.Size(626, 488)
-        Me.pnlBarber.TabIndex = 29
+        Me.pnlBarber.TabIndex = 0
         '
         'btnBarberBack
         '
         Me.btnBarberBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
         Me.btnBarberBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBarberBack.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBarberBack.Location = New System.Drawing.Point(354, 500)
+        Me.btnBarberBack.Location = New System.Drawing.Point(438, 500)
         Me.btnBarberBack.Name = "btnBarberBack"
         Me.btnBarberBack.Size = New System.Drawing.Size(75, 23)
-        Me.btnBarberBack.TabIndex = 38
+        Me.btnBarberBack.TabIndex = 6
         Me.btnBarberBack.Text = "&Back"
         Me.btnBarberBack.UseVisualStyleBackColor = False
         '
@@ -942,10 +942,10 @@ Partial Class frmMain
         Me.btnBarberNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBarberNext.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBarberNext.ForeColor = System.Drawing.Color.Black
-        Me.btnBarberNext.Location = New System.Drawing.Point(438, 500)
+        Me.btnBarberNext.Location = New System.Drawing.Point(522, 500)
         Me.btnBarberNext.Name = "btnBarberNext"
         Me.btnBarberNext.Size = New System.Drawing.Size(75, 23)
-        Me.btnBarberNext.TabIndex = 37
+        Me.btnBarberNext.TabIndex = 7
         Me.btnBarberNext.Text = "&Next"
         Me.btnBarberNext.UseVisualStyleBackColor = False
         '
@@ -955,10 +955,10 @@ Partial Class frmMain
         Me.btnBarberReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBarberReset.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBarberReset.ForeColor = System.Drawing.Color.Black
-        Me.btnBarberReset.Location = New System.Drawing.Point(522, 500)
+        Me.btnBarberReset.Location = New System.Drawing.Point(354, 500)
         Me.btnBarberReset.Name = "btnBarberReset"
         Me.btnBarberReset.Size = New System.Drawing.Size(75, 23)
-        Me.btnBarberReset.TabIndex = 36
+        Me.btnBarberReset.TabIndex = 8
         Me.btnBarberReset.Text = "Reset"
         Me.btnBarberReset.UseVisualStyleBackColor = False
         '
@@ -1200,10 +1200,10 @@ Partial Class frmMain
         Me.btnCheckOutReset.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
         Me.btnCheckOutReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCheckOutReset.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCheckOutReset.Location = New System.Drawing.Point(464, 462)
+        Me.btnCheckOutReset.Location = New System.Drawing.Point(380, 462)
         Me.btnCheckOutReset.Name = "btnCheckOutReset"
         Me.btnCheckOutReset.Size = New System.Drawing.Size(75, 23)
-        Me.btnCheckOutReset.TabIndex = 44
+        Me.btnCheckOutReset.TabIndex = 12
         Me.btnCheckOutReset.Text = "&Reset"
         Me.btnCheckOutReset.UseVisualStyleBackColor = False
         '
@@ -1212,10 +1212,10 @@ Partial Class frmMain
         Me.btnCheckOutBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
         Me.btnCheckOutBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCheckOutBack.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCheckOutBack.Location = New System.Drawing.Point(380, 462)
+        Me.btnCheckOutBack.Location = New System.Drawing.Point(464, 462)
         Me.btnCheckOutBack.Name = "btnCheckOutBack"
         Me.btnCheckOutBack.Size = New System.Drawing.Size(75, 23)
-        Me.btnCheckOutBack.TabIndex = 43
+        Me.btnCheckOutBack.TabIndex = 11
         Me.btnCheckOutBack.Text = "&Back"
         Me.btnCheckOutBack.UseVisualStyleBackColor = False
         '
@@ -1230,7 +1230,7 @@ Partial Class frmMain
         Me.dtpExpDate.MinDate = New Date(1950, 1, 1, 0, 0, 0, 0)
         Me.dtpExpDate.Name = "dtpExpDate"
         Me.dtpExpDate.Size = New System.Drawing.Size(136, 23)
-        Me.dtpExpDate.TabIndex = 42
+        Me.dtpExpDate.TabIndex = 9
         '
         'btnSubmit
         '
@@ -1240,7 +1240,7 @@ Partial Class frmMain
         Me.btnSubmit.Location = New System.Drawing.Point(548, 462)
         Me.btnSubmit.Name = "btnSubmit"
         Me.btnSubmit.Size = New System.Drawing.Size(75, 23)
-        Me.btnSubmit.TabIndex = 41
+        Me.btnSubmit.TabIndex = 13
         Me.btnSubmit.Text = "&Submit"
         Me.btnSubmit.UseVisualStyleBackColor = False
         '
@@ -1370,7 +1370,7 @@ Partial Class frmMain
         Me.txtSecurityCode.MaxLength = 4
         Me.txtSecurityCode.Name = "txtSecurityCode"
         Me.txtSecurityCode.Size = New System.Drawing.Size(121, 23)
-        Me.txtSecurityCode.TabIndex = 27
+        Me.txtSecurityCode.TabIndex = 10
         Me.txtSecurityCode.UseSystemPasswordChar = True
         '
         'mtxtPhoneNum
@@ -1381,7 +1381,7 @@ Partial Class frmMain
         Me.mtxtPhoneNum.Mask = "000-0000"
         Me.mtxtPhoneNum.Name = "mtxtPhoneNum"
         Me.mtxtPhoneNum.Size = New System.Drawing.Size(135, 23)
-        Me.mtxtPhoneNum.TabIndex = 26
+        Me.mtxtPhoneNum.TabIndex = 6
         Me.mtxtPhoneNum.UseSystemPasswordChar = True
         '
         'txtCardName
@@ -1392,7 +1392,7 @@ Partial Class frmMain
         Me.txtCardName.MaxLength = 25
         Me.txtCardName.Name = "txtCardName"
         Me.txtCardName.Size = New System.Drawing.Size(270, 23)
-        Me.txtCardName.TabIndex = 24
+        Me.txtCardName.TabIndex = 8
         '
         'txtCardNum
         '
@@ -1402,7 +1402,7 @@ Partial Class frmMain
         Me.txtCardNum.MaxLength = 19
         Me.txtCardNum.Name = "txtCardNum"
         Me.txtCardNum.Size = New System.Drawing.Size(270, 23)
-        Me.txtCardNum.TabIndex = 23
+        Me.txtCardNum.TabIndex = 7
         Me.txtCardNum.UseSystemPasswordChar = True
         '
         'lblPaymentInfo
@@ -1422,7 +1422,7 @@ Partial Class frmMain
         Me.nudAge.Location = New System.Drawing.Point(12, 211)
         Me.nudAge.Name = "nudAge"
         Me.nudAge.Size = New System.Drawing.Size(121, 23)
-        Me.nudAge.TabIndex = 21
+        Me.nudAge.TabIndex = 5
         '
         'cboCityTown
         '
@@ -1434,7 +1434,7 @@ Partial Class frmMain
         Me.cboCityTown.Location = New System.Drawing.Point(149, 159)
         Me.cboCityTown.Name = "cboCityTown"
         Me.cboCityTown.Size = New System.Drawing.Size(135, 24)
-        Me.cboCityTown.TabIndex = 5
+        Me.cboCityTown.TabIndex = 4
         '
         'cboDistrict
         '
@@ -1445,7 +1445,7 @@ Partial Class frmMain
         Me.cboDistrict.Location = New System.Drawing.Point(12, 159)
         Me.cboDistrict.Name = "cboDistrict"
         Me.cboDistrict.Size = New System.Drawing.Size(121, 24)
-        Me.cboDistrict.TabIndex = 4
+        Me.cboDistrict.TabIndex = 3
         '
         'txtAddress
         '
@@ -1455,7 +1455,7 @@ Partial Class frmMain
         Me.txtAddress.MaxLength = 30
         Me.txtAddress.Name = "txtAddress"
         Me.txtAddress.Size = New System.Drawing.Size(270, 23)
-        Me.txtAddress.TabIndex = 3
+        Me.txtAddress.TabIndex = 2
         '
         'txtLName
         '
@@ -1465,7 +1465,7 @@ Partial Class frmMain
         Me.txtLName.MaxLength = 15
         Me.txtLName.Name = "txtLName"
         Me.txtLName.Size = New System.Drawing.Size(135, 23)
-        Me.txtLName.TabIndex = 2
+        Me.txtLName.TabIndex = 1
         '
         'lblBillAddress
         '
@@ -1506,10 +1506,10 @@ Partial Class frmMain
         Me.btnScheduleBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
         Me.btnScheduleBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnScheduleBack.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnScheduleBack.Location = New System.Drawing.Point(380, 462)
+        Me.btnScheduleBack.Location = New System.Drawing.Point(464, 462)
         Me.btnScheduleBack.Name = "btnScheduleBack"
         Me.btnScheduleBack.Size = New System.Drawing.Size(75, 23)
-        Me.btnScheduleBack.TabIndex = 33
+        Me.btnScheduleBack.TabIndex = 17
         Me.btnScheduleBack.Text = "&Back"
         Me.btnScheduleBack.UseVisualStyleBackColor = False
         '
@@ -1518,10 +1518,10 @@ Partial Class frmMain
         Me.btnScheduleNext.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
         Me.btnScheduleNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnScheduleNext.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnScheduleNext.Location = New System.Drawing.Point(464, 462)
+        Me.btnScheduleNext.Location = New System.Drawing.Point(548, 462)
         Me.btnScheduleNext.Name = "btnScheduleNext"
         Me.btnScheduleNext.Size = New System.Drawing.Size(75, 23)
-        Me.btnScheduleNext.TabIndex = 32
+        Me.btnScheduleNext.TabIndex = 18
         Me.btnScheduleNext.Text = "&Next"
         Me.btnScheduleNext.UseVisualStyleBackColor = False
         '
@@ -1530,10 +1530,10 @@ Partial Class frmMain
         Me.btnScheduleReset.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
         Me.btnScheduleReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnScheduleReset.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnScheduleReset.Location = New System.Drawing.Point(548, 462)
+        Me.btnScheduleReset.Location = New System.Drawing.Point(380, 462)
         Me.btnScheduleReset.Name = "btnScheduleReset"
         Me.btnScheduleReset.Size = New System.Drawing.Size(75, 23)
-        Me.btnScheduleReset.TabIndex = 31
+        Me.btnScheduleReset.TabIndex = 19
         Me.btnScheduleReset.Text = "&Reset"
         Me.btnScheduleReset.UseVisualStyleBackColor = False
         '
@@ -1574,7 +1574,7 @@ Partial Class frmMain
         Me.radAfternoon8.Location = New System.Drawing.Point(438, 249)
         Me.radAfternoon8.Name = "radAfternoon8"
         Me.radAfternoon8.Size = New System.Drawing.Size(96, 20)
-        Me.radAfternoon8.TabIndex = 17
+        Me.radAfternoon8.TabIndex = 16
         Me.radAfternoon8.TabStop = True
         Me.radAfternoon8.Text = "4:30 - 5:00"
         Me.radAfternoon8.UseVisualStyleBackColor = False
@@ -1586,7 +1586,7 @@ Partial Class frmMain
         Me.radAfternoon7.Location = New System.Drawing.Point(296, 249)
         Me.radAfternoon7.Name = "radAfternoon7"
         Me.radAfternoon7.Size = New System.Drawing.Size(96, 20)
-        Me.radAfternoon7.TabIndex = 16
+        Me.radAfternoon7.TabIndex = 15
         Me.radAfternoon7.TabStop = True
         Me.radAfternoon7.Text = "4:00 - 4:30"
         Me.radAfternoon7.UseVisualStyleBackColor = False
@@ -1598,7 +1598,7 @@ Partial Class frmMain
         Me.radAfternoon6.Location = New System.Drawing.Point(154, 249)
         Me.radAfternoon6.Name = "radAfternoon6"
         Me.radAfternoon6.Size = New System.Drawing.Size(96, 20)
-        Me.radAfternoon6.TabIndex = 15
+        Me.radAfternoon6.TabIndex = 14
         Me.radAfternoon6.TabStop = True
         Me.radAfternoon6.Text = "3:30 - 4:00"
         Me.radAfternoon6.UseVisualStyleBackColor = False
@@ -1610,7 +1610,7 @@ Partial Class frmMain
         Me.radAfternoon5.Location = New System.Drawing.Point(9, 249)
         Me.radAfternoon5.Name = "radAfternoon5"
         Me.radAfternoon5.Size = New System.Drawing.Size(96, 20)
-        Me.radAfternoon5.TabIndex = 14
+        Me.radAfternoon5.TabIndex = 13
         Me.radAfternoon5.TabStop = True
         Me.radAfternoon5.Text = "3:00 - 3:30"
         Me.radAfternoon5.UseVisualStyleBackColor = False
@@ -1622,7 +1622,7 @@ Partial Class frmMain
         Me.radAfternoon4.Location = New System.Drawing.Point(438, 189)
         Me.radAfternoon4.Name = "radAfternoon4"
         Me.radAfternoon4.Size = New System.Drawing.Size(96, 20)
-        Me.radAfternoon4.TabIndex = 13
+        Me.radAfternoon4.TabIndex = 12
         Me.radAfternoon4.TabStop = True
         Me.radAfternoon4.Text = "2:30 - 3:00"
         Me.radAfternoon4.UseVisualStyleBackColor = False
@@ -1634,7 +1634,7 @@ Partial Class frmMain
         Me.radAfternoon3.Location = New System.Drawing.Point(296, 189)
         Me.radAfternoon3.Name = "radAfternoon3"
         Me.radAfternoon3.Size = New System.Drawing.Size(96, 20)
-        Me.radAfternoon3.TabIndex = 12
+        Me.radAfternoon3.TabIndex = 11
         Me.radAfternoon3.TabStop = True
         Me.radAfternoon3.Text = "2:00 - 2:30"
         Me.radAfternoon3.UseVisualStyleBackColor = False
@@ -1646,7 +1646,7 @@ Partial Class frmMain
         Me.radAfternoon2.Location = New System.Drawing.Point(154, 189)
         Me.radAfternoon2.Name = "radAfternoon2"
         Me.radAfternoon2.Size = New System.Drawing.Size(94, 20)
-        Me.radAfternoon2.TabIndex = 11
+        Me.radAfternoon2.TabIndex = 10
         Me.radAfternoon2.TabStop = True
         Me.radAfternoon2.Text = "1:30 - 2:00"
         Me.radAfternoon2.UseVisualStyleBackColor = False
@@ -1658,7 +1658,7 @@ Partial Class frmMain
         Me.radAfternoon1.Location = New System.Drawing.Point(9, 189)
         Me.radAfternoon1.Name = "radAfternoon1"
         Me.radAfternoon1.Size = New System.Drawing.Size(92, 20)
-        Me.radAfternoon1.TabIndex = 10
+        Me.radAfternoon1.TabIndex = 9
         Me.radAfternoon1.TabStop = True
         Me.radAfternoon1.Text = "1:00 - 1:30"
         Me.radAfternoon1.UseVisualStyleBackColor = False
@@ -1739,7 +1739,7 @@ Partial Class frmMain
         Me.radMorning3.Location = New System.Drawing.Point(296, 57)
         Me.radMorning3.Name = "radMorning3"
         Me.radMorning3.Size = New System.Drawing.Size(96, 20)
-        Me.radMorning3.TabIndex = 2
+        Me.radMorning3.TabIndex = 3
         Me.radMorning3.TabStop = True
         Me.radMorning3.Text = "9:00 - 9:30"
         Me.radMorning3.UseVisualStyleBackColor = False
@@ -1751,7 +1751,7 @@ Partial Class frmMain
         Me.radMorning2.Location = New System.Drawing.Point(154, 57)
         Me.radMorning2.Name = "radMorning2"
         Me.radMorning2.Size = New System.Drawing.Size(96, 20)
-        Me.radMorning2.TabIndex = 1
+        Me.radMorning2.TabIndex = 2
         Me.radMorning2.TabStop = True
         Me.radMorning2.Text = "8:30 - 9:00"
         Me.radMorning2.UseVisualStyleBackColor = False
@@ -1773,7 +1773,7 @@ Partial Class frmMain
         Me.radMorning1.Location = New System.Drawing.Point(12, 57)
         Me.radMorning1.Name = "radMorning1"
         Me.radMorning1.Size = New System.Drawing.Size(96, 20)
-        Me.radMorning1.TabIndex = 5
+        Me.radMorning1.TabIndex = 1
         Me.radMorning1.TabStop = True
         Me.radMorning1.Text = "8:00 - 8:30"
         Me.radMorning1.UseVisualStyleBackColor = False
@@ -1808,7 +1808,7 @@ Partial Class frmMain
         Me.dtpScheduleDate.Name = "dtpScheduleDate"
         Me.dtpScheduleDate.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.dtpScheduleDate.Size = New System.Drawing.Size(119, 21)
-        Me.dtpScheduleDate.TabIndex = 1
+        Me.dtpScheduleDate.TabIndex = 0
         Me.dtpScheduleDate.Value = New Date(2023, 2, 11, 0, 0, 0, 0)
         '
         'frmMain

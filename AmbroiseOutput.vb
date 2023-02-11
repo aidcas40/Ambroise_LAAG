@@ -46,6 +46,7 @@
 
     Private Sub btnOExit_Click(sender As Object, e As EventArgs) Handles btnOExit.Click
         Me.Close()
+        frmMain.Close()
     End Sub
 
     Private Sub btnOBack_Click(sender As Object, e As EventArgs) Handles btnOBack.Click
