@@ -32,6 +32,7 @@ Partial Class frmMain
         Me.btnBarber = New System.Windows.Forms.Button()
         Me.btnServices = New System.Windows.Forms.Button()
         Me.pnlServices = New System.Windows.Forms.Panel()
+        Me.btnServicesNext = New System.Windows.Forms.Button()
         Me.btnServicesReset = New System.Windows.Forms.Button()
         Me.pnlAddOns = New System.Windows.Forms.Panel()
         Me.lblAddOns = New System.Windows.Forms.Label()
@@ -79,6 +80,12 @@ Partial Class frmMain
         Me.lblFrenchCropPrice = New System.Windows.Forms.Label()
         Me.radFrenchCrop = New System.Windows.Forms.RadioButton()
         Me.pnlBarber = New System.Windows.Forms.Panel()
+        Me.pctBarber6Rating = New System.Windows.Forms.PictureBox()
+        Me.pctBarber5Rating = New System.Windows.Forms.PictureBox()
+        Me.pctBarber4Rating = New System.Windows.Forms.PictureBox()
+        Me.pctBarber3Rating = New System.Windows.Forms.PictureBox()
+        Me.pctBarber2Rating = New System.Windows.Forms.PictureBox()
+        Me.pctBarber1Rating = New System.Windows.Forms.PictureBox()
         Me.lblChooseBarber = New System.Windows.Forms.Label()
         Me.radBarber6 = New System.Windows.Forms.RadioButton()
         Me.radBarber3 = New System.Windows.Forms.RadioButton()
@@ -86,13 +93,15 @@ Partial Class frmMain
         Me.radBarber5 = New System.Windows.Forms.RadioButton()
         Me.radBarber2 = New System.Windows.Forms.RadioButton()
         Me.radBarber1 = New System.Windows.Forms.RadioButton()
-        Me.picBarber6 = New System.Windows.Forms.PictureBox()
-        Me.picBarber5 = New System.Windows.Forms.PictureBox()
-        Me.picBarber4 = New System.Windows.Forms.PictureBox()
-        Me.picBarber3 = New System.Windows.Forms.PictureBox()
-        Me.picBarber2 = New System.Windows.Forms.PictureBox()
-        Me.picBarber1 = New System.Windows.Forms.PictureBox()
+        Me.pctBarber6 = New System.Windows.Forms.PictureBox()
+        Me.pctBarber5 = New System.Windows.Forms.PictureBox()
+        Me.pctBarber4 = New System.Windows.Forms.PictureBox()
+        Me.pctBarber3 = New System.Windows.Forms.PictureBox()
+        Me.pctBarber2 = New System.Windows.Forms.PictureBox()
+        Me.pctBarber1 = New System.Windows.Forms.PictureBox()
         Me.pnlCheckOut = New System.Windows.Forms.Panel()
+        Me.btnCheckOutReset = New System.Windows.Forms.Button()
+        Me.btnCheckOutBack = New System.Windows.Forms.Button()
         Me.dtpExpDate = New System.Windows.Forms.DateTimePicker()
         Me.btnSubmit = New System.Windows.Forms.Button()
         Me.pnlSummary = New System.Windows.Forms.Panel()
@@ -121,6 +130,9 @@ Partial Class frmMain
         Me.lblBillAddress = New System.Windows.Forms.Label()
         Me.txtFName = New System.Windows.Forms.TextBox()
         Me.pnlSchedule = New System.Windows.Forms.Panel()
+        Me.btnScheduleBack = New System.Windows.Forms.Button()
+        Me.btnScheduleNext = New System.Windows.Forms.Button()
+        Me.btnScheduleReset = New System.Windows.Forms.Button()
         Me.grbTimeSlots = New System.Windows.Forms.GroupBox()
         Me.radAfternoon8 = New System.Windows.Forms.RadioButton()
         Me.radAfternoon7 = New System.Windows.Forms.RadioButton()
@@ -143,6 +155,9 @@ Partial Class frmMain
         Me.lblChooseDate = New System.Windows.Forms.Label()
         Me.lblAppointment = New System.Windows.Forms.Label()
         Me.dtpScheduleDate = New System.Windows.Forms.DateTimePicker()
+        Me.btnBarberReset = New System.Windows.Forms.Button()
+        Me.btnBarberNext = New System.Windows.Forms.Button()
+        Me.btnBarberBack = New System.Windows.Forms.Button()
         Me.pnlNavbar.SuspendLayout()
         CType(Me.pctLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlServices.SuspendLayout()
@@ -160,12 +175,18 @@ Partial Class frmMain
         CType(Me.pctPompadour, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pctCombOver, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlBarber.SuspendLayout()
-        CType(Me.picBarber6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picBarber5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picBarber4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picBarber3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picBarber2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picBarber1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pctBarber6Rating, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pctBarber5Rating, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pctBarber4Rating, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pctBarber3Rating, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pctBarber2Rating, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pctBarber1Rating, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pctBarber6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pctBarber5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pctBarber4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pctBarber3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pctBarber2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pctBarber1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlCheckOut.SuspendLayout()
         Me.pnlSummary.SuspendLayout()
         CType(Me.nudAge, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -187,13 +208,14 @@ Partial Class frmMain
         Me.pnlNavbar.ForeColor = System.Drawing.Color.White
         Me.pnlNavbar.Location = New System.Drawing.Point(0, 0)
         Me.pnlNavbar.Name = "pnlNavbar"
-        Me.pnlNavbar.Size = New System.Drawing.Size(154, 481)
+        Me.pnlNavbar.Size = New System.Drawing.Size(154, 499)
         Me.pnlNavbar.TabIndex = 0
         '
         'btnExitServices
         '
         Me.btnExitServices.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
         Me.btnExitServices.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.btnExitServices.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnExitServices.Font = New System.Drawing.Font("Inter", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnExitServices.ForeColor = System.Drawing.Color.Black
         Me.btnExitServices.Location = New System.Drawing.Point(12, 240)
@@ -207,7 +229,7 @@ Partial Class frmMain
         '
         Me.pctLogo.BackColor = System.Drawing.Color.Transparent
         Me.pctLogo.Image = CType(resources.GetObject("pctLogo.Image"), System.Drawing.Image)
-        Me.pctLogo.Location = New System.Drawing.Point(26, 329)
+        Me.pctLogo.Location = New System.Drawing.Point(26, 371)
         Me.pctLogo.Name = "pctLogo"
         Me.pctLogo.Size = New System.Drawing.Size(100, 85)
         Me.pctLogo.TabIndex = 21
@@ -292,20 +314,35 @@ Partial Class frmMain
         '
         'pnlServices
         '
+        Me.pnlServices.Controls.Add(Me.btnServicesNext)
         Me.pnlServices.Controls.Add(Me.btnServicesReset)
         Me.pnlServices.Controls.Add(Me.pnlAddOns)
         Me.pnlServices.Controls.Add(Me.pnlHaircut)
         Me.pnlServices.Location = New System.Drawing.Point(157, 0)
         Me.pnlServices.Name = "pnlServices"
-        Me.pnlServices.Size = New System.Drawing.Size(626, 481)
+        Me.pnlServices.Size = New System.Drawing.Size(626, 488)
         Me.pnlServices.TabIndex = 29
+        '
+        'btnServicesNext
+        '
+        Me.btnServicesNext.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
+        Me.btnServicesNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnServicesNext.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnServicesNext.ForeColor = System.Drawing.Color.Black
+        Me.btnServicesNext.Location = New System.Drawing.Point(457, 462)
+        Me.btnServicesNext.Name = "btnServicesNext"
+        Me.btnServicesNext.Size = New System.Drawing.Size(75, 23)
+        Me.btnServicesNext.TabIndex = 23
+        Me.btnServicesNext.Text = "&Next"
+        Me.btnServicesNext.UseVisualStyleBackColor = False
         '
         'btnServicesReset
         '
         Me.btnServicesReset.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
+        Me.btnServicesReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnServicesReset.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnServicesReset.ForeColor = System.Drawing.Color.Black
-        Me.btnServicesReset.Location = New System.Drawing.Point(548, 452)
+        Me.btnServicesReset.Location = New System.Drawing.Point(540, 462)
         Me.btnServicesReset.Name = "btnServicesReset"
         Me.btnServicesReset.Size = New System.Drawing.Size(75, 23)
         Me.btnServicesReset.TabIndex = 22
@@ -322,7 +359,7 @@ Partial Class frmMain
         Me.pnlAddOns.Controls.Add(Me.grbExtraServices)
         Me.pnlAddOns.Location = New System.Drawing.Point(464, 3)
         Me.pnlAddOns.Name = "pnlAddOns"
-        Me.pnlAddOns.Size = New System.Drawing.Size(162, 443)
+        Me.pnlAddOns.Size = New System.Drawing.Size(162, 453)
         Me.pnlAddOns.TabIndex = 21
         '
         'lblAddOns
@@ -551,7 +588,7 @@ Partial Class frmMain
         Me.pnlHaircut.Controls.Add(Me.radFrenchCrop)
         Me.pnlHaircut.Location = New System.Drawing.Point(3, 3)
         Me.pnlHaircut.Name = "pnlHaircut"
-        Me.pnlHaircut.Size = New System.Drawing.Size(458, 443)
+        Me.pnlHaircut.Size = New System.Drawing.Size(458, 453)
         Me.pnlHaircut.TabIndex = 20
         '
         'lblChooseHaircut
@@ -860,6 +897,17 @@ Partial Class frmMain
         '
         'pnlBarber
         '
+        Me.pnlBarber.AutoScroll = True
+        Me.pnlBarber.AutoScrollMargin = New System.Drawing.Size(0, 30)
+        Me.pnlBarber.Controls.Add(Me.btnBarberBack)
+        Me.pnlBarber.Controls.Add(Me.btnBarberNext)
+        Me.pnlBarber.Controls.Add(Me.btnBarberReset)
+        Me.pnlBarber.Controls.Add(Me.pctBarber6Rating)
+        Me.pnlBarber.Controls.Add(Me.pctBarber5Rating)
+        Me.pnlBarber.Controls.Add(Me.pctBarber4Rating)
+        Me.pnlBarber.Controls.Add(Me.pctBarber3Rating)
+        Me.pnlBarber.Controls.Add(Me.pctBarber2Rating)
+        Me.pnlBarber.Controls.Add(Me.pctBarber1Rating)
         Me.pnlBarber.Controls.Add(Me.lblChooseBarber)
         Me.pnlBarber.Controls.Add(Me.radBarber6)
         Me.pnlBarber.Controls.Add(Me.radBarber3)
@@ -867,16 +915,70 @@ Partial Class frmMain
         Me.pnlBarber.Controls.Add(Me.radBarber5)
         Me.pnlBarber.Controls.Add(Me.radBarber2)
         Me.pnlBarber.Controls.Add(Me.radBarber1)
-        Me.pnlBarber.Controls.Add(Me.picBarber6)
-        Me.pnlBarber.Controls.Add(Me.picBarber5)
-        Me.pnlBarber.Controls.Add(Me.picBarber4)
-        Me.pnlBarber.Controls.Add(Me.picBarber3)
-        Me.pnlBarber.Controls.Add(Me.picBarber2)
-        Me.pnlBarber.Controls.Add(Me.picBarber1)
+        Me.pnlBarber.Controls.Add(Me.pctBarber6)
+        Me.pnlBarber.Controls.Add(Me.pctBarber5)
+        Me.pnlBarber.Controls.Add(Me.pctBarber4)
+        Me.pnlBarber.Controls.Add(Me.pctBarber3)
+        Me.pnlBarber.Controls.Add(Me.pctBarber2)
+        Me.pnlBarber.Controls.Add(Me.pctBarber1)
         Me.pnlBarber.Location = New System.Drawing.Point(157, 0)
         Me.pnlBarber.Name = "pnlBarber"
-        Me.pnlBarber.Size = New System.Drawing.Size(626, 481)
+        Me.pnlBarber.Size = New System.Drawing.Size(626, 488)
         Me.pnlBarber.TabIndex = 29
+        '
+        'pctBarber6Rating
+        '
+        Me.pctBarber6Rating.Image = CType(resources.GetObject("pctBarber6Rating.Image"), System.Drawing.Image)
+        Me.pctBarber6Rating.Location = New System.Drawing.Point(477, 449)
+        Me.pctBarber6Rating.Name = "pctBarber6Rating"
+        Me.pctBarber6Rating.Size = New System.Drawing.Size(100, 20)
+        Me.pctBarber6Rating.TabIndex = 35
+        Me.pctBarber6Rating.TabStop = False
+        '
+        'pctBarber5Rating
+        '
+        Me.pctBarber5Rating.Image = CType(resources.GetObject("pctBarber5Rating.Image"), System.Drawing.Image)
+        Me.pctBarber5Rating.Location = New System.Drawing.Point(259, 449)
+        Me.pctBarber5Rating.Name = "pctBarber5Rating"
+        Me.pctBarber5Rating.Size = New System.Drawing.Size(100, 20)
+        Me.pctBarber5Rating.TabIndex = 34
+        Me.pctBarber5Rating.TabStop = False
+        '
+        'pctBarber4Rating
+        '
+        Me.pctBarber4Rating.Image = CType(resources.GetObject("pctBarber4Rating.Image"), System.Drawing.Image)
+        Me.pctBarber4Rating.Location = New System.Drawing.Point(40, 449)
+        Me.pctBarber4Rating.Name = "pctBarber4Rating"
+        Me.pctBarber4Rating.Size = New System.Drawing.Size(100, 20)
+        Me.pctBarber4Rating.TabIndex = 33
+        Me.pctBarber4Rating.TabStop = False
+        '
+        'pctBarber3Rating
+        '
+        Me.pctBarber3Rating.Image = CType(resources.GetObject("pctBarber3Rating.Image"), System.Drawing.Image)
+        Me.pctBarber3Rating.Location = New System.Drawing.Point(478, 227)
+        Me.pctBarber3Rating.Name = "pctBarber3Rating"
+        Me.pctBarber3Rating.Size = New System.Drawing.Size(100, 20)
+        Me.pctBarber3Rating.TabIndex = 32
+        Me.pctBarber3Rating.TabStop = False
+        '
+        'pctBarber2Rating
+        '
+        Me.pctBarber2Rating.Image = CType(resources.GetObject("pctBarber2Rating.Image"), System.Drawing.Image)
+        Me.pctBarber2Rating.Location = New System.Drawing.Point(259, 227)
+        Me.pctBarber2Rating.Name = "pctBarber2Rating"
+        Me.pctBarber2Rating.Size = New System.Drawing.Size(100, 20)
+        Me.pctBarber2Rating.TabIndex = 31
+        Me.pctBarber2Rating.TabStop = False
+        '
+        'pctBarber1Rating
+        '
+        Me.pctBarber1Rating.Image = CType(resources.GetObject("pctBarber1Rating.Image"), System.Drawing.Image)
+        Me.pctBarber1Rating.Location = New System.Drawing.Point(40, 227)
+        Me.pctBarber1Rating.Name = "pctBarber1Rating"
+        Me.pctBarber1Rating.Size = New System.Drawing.Size(100, 20)
+        Me.pctBarber1Rating.TabIndex = 30
+        Me.pctBarber1Rating.TabStop = False
         '
         'lblChooseBarber
         '
@@ -892,7 +994,7 @@ Partial Class frmMain
         '
         Me.radBarber6.AutoSize = True
         Me.radBarber6.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.radBarber6.Location = New System.Drawing.Point(477, 426)
+        Me.radBarber6.Location = New System.Drawing.Point(477, 430)
         Me.radBarber6.Name = "radBarber6"
         Me.radBarber6.Size = New System.Drawing.Size(101, 20)
         Me.radBarber6.TabIndex = 5
@@ -916,7 +1018,7 @@ Partial Class frmMain
         '
         Me.radBarber4.AutoSize = True
         Me.radBarber4.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.radBarber4.Location = New System.Drawing.Point(26, 426)
+        Me.radBarber4.Location = New System.Drawing.Point(25, 430)
         Me.radBarber4.Name = "radBarber4"
         Me.radBarber4.Size = New System.Drawing.Size(130, 20)
         Me.radBarber4.TabIndex = 3
@@ -928,7 +1030,7 @@ Partial Class frmMain
         '
         Me.radBarber5.AutoSize = True
         Me.radBarber5.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.radBarber5.Location = New System.Drawing.Point(256, 426)
+        Me.radBarber5.Location = New System.Drawing.Point(256, 430)
         Me.radBarber5.Name = "radBarber5"
         Me.radBarber5.Size = New System.Drawing.Size(106, 20)
         Me.radBarber5.TabIndex = 4
@@ -960,70 +1062,72 @@ Partial Class frmMain
         Me.radBarber1.Text = "Stanley Brady"
         Me.radBarber1.UseVisualStyleBackColor = True
         '
-        'picBarber6
+        'pctBarber6
         '
-        Me.picBarber6.BackColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(221, Byte), Integer))
-        Me.picBarber6.BackgroundImage = CType(resources.GetObject("picBarber6.BackgroundImage"), System.Drawing.Image)
-        Me.picBarber6.Location = New System.Drawing.Point(457, 250)
-        Me.picBarber6.Name = "picBarber6"
-        Me.picBarber6.Size = New System.Drawing.Size(140, 170)
-        Me.picBarber6.TabIndex = 5
-        Me.picBarber6.TabStop = False
+        Me.pctBarber6.BackColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(221, Byte), Integer))
+        Me.pctBarber6.BackgroundImage = CType(resources.GetObject("pctBarber6.BackgroundImage"), System.Drawing.Image)
+        Me.pctBarber6.Location = New System.Drawing.Point(457, 252)
+        Me.pctBarber6.Name = "pctBarber6"
+        Me.pctBarber6.Size = New System.Drawing.Size(140, 170)
+        Me.pctBarber6.TabIndex = 5
+        Me.pctBarber6.TabStop = False
         '
-        'picBarber5
+        'pctBarber5
         '
-        Me.picBarber5.BackColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(221, Byte), Integer))
-        Me.picBarber5.BackgroundImage = CType(resources.GetObject("picBarber5.BackgroundImage"), System.Drawing.Image)
-        Me.picBarber5.Location = New System.Drawing.Point(239, 250)
-        Me.picBarber5.Name = "picBarber5"
-        Me.picBarber5.Size = New System.Drawing.Size(140, 170)
-        Me.picBarber5.TabIndex = 4
-        Me.picBarber5.TabStop = False
+        Me.pctBarber5.BackColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(221, Byte), Integer))
+        Me.pctBarber5.BackgroundImage = CType(resources.GetObject("pctBarber5.BackgroundImage"), System.Drawing.Image)
+        Me.pctBarber5.Location = New System.Drawing.Point(239, 252)
+        Me.pctBarber5.Name = "pctBarber5"
+        Me.pctBarber5.Size = New System.Drawing.Size(140, 170)
+        Me.pctBarber5.TabIndex = 4
+        Me.pctBarber5.TabStop = False
         '
-        'picBarber4
+        'pctBarber4
         '
-        Me.picBarber4.BackColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(221, Byte), Integer))
-        Me.picBarber4.BackgroundImage = CType(resources.GetObject("picBarber4.BackgroundImage"), System.Drawing.Image)
-        Me.picBarber4.Location = New System.Drawing.Point(21, 250)
-        Me.picBarber4.Name = "picBarber4"
-        Me.picBarber4.Size = New System.Drawing.Size(140, 170)
-        Me.picBarber4.TabIndex = 3
-        Me.picBarber4.TabStop = False
+        Me.pctBarber4.BackColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(221, Byte), Integer))
+        Me.pctBarber4.BackgroundImage = CType(resources.GetObject("pctBarber4.BackgroundImage"), System.Drawing.Image)
+        Me.pctBarber4.Location = New System.Drawing.Point(20, 252)
+        Me.pctBarber4.Name = "pctBarber4"
+        Me.pctBarber4.Size = New System.Drawing.Size(140, 170)
+        Me.pctBarber4.TabIndex = 3
+        Me.pctBarber4.TabStop = False
         '
-        'picBarber3
+        'pctBarber3
         '
-        Me.picBarber3.BackColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(221, Byte), Integer))
-        Me.picBarber3.BackgroundImage = CType(resources.GetObject("picBarber3.BackgroundImage"), System.Drawing.Image)
-        Me.picBarber3.Location = New System.Drawing.Point(458, 30)
-        Me.picBarber3.Name = "picBarber3"
-        Me.picBarber3.Size = New System.Drawing.Size(140, 170)
-        Me.picBarber3.TabIndex = 2
-        Me.picBarber3.TabStop = False
+        Me.pctBarber3.BackColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(221, Byte), Integer))
+        Me.pctBarber3.BackgroundImage = CType(resources.GetObject("pctBarber3.BackgroundImage"), System.Drawing.Image)
+        Me.pctBarber3.Location = New System.Drawing.Point(458, 30)
+        Me.pctBarber3.Name = "pctBarber3"
+        Me.pctBarber3.Size = New System.Drawing.Size(140, 170)
+        Me.pctBarber3.TabIndex = 2
+        Me.pctBarber3.TabStop = False
         '
-        'picBarber2
+        'pctBarber2
         '
-        Me.picBarber2.BackColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(221, Byte), Integer))
-        Me.picBarber2.BackgroundImage = CType(resources.GetObject("picBarber2.BackgroundImage"), System.Drawing.Image)
-        Me.picBarber2.Location = New System.Drawing.Point(239, 30)
-        Me.picBarber2.Name = "picBarber2"
-        Me.picBarber2.Size = New System.Drawing.Size(140, 170)
-        Me.picBarber2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picBarber2.TabIndex = 1
-        Me.picBarber2.TabStop = False
+        Me.pctBarber2.BackColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(221, Byte), Integer))
+        Me.pctBarber2.BackgroundImage = CType(resources.GetObject("pctBarber2.BackgroundImage"), System.Drawing.Image)
+        Me.pctBarber2.Location = New System.Drawing.Point(239, 30)
+        Me.pctBarber2.Name = "pctBarber2"
+        Me.pctBarber2.Size = New System.Drawing.Size(140, 170)
+        Me.pctBarber2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pctBarber2.TabIndex = 1
+        Me.pctBarber2.TabStop = False
         '
-        'picBarber1
+        'pctBarber1
         '
-        Me.picBarber1.BackColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(221, Byte), Integer))
-        Me.picBarber1.BackgroundImage = CType(resources.GetObject("picBarber1.BackgroundImage"), System.Drawing.Image)
-        Me.picBarber1.Location = New System.Drawing.Point(20, 30)
-        Me.picBarber1.Name = "picBarber1"
-        Me.picBarber1.Size = New System.Drawing.Size(140, 170)
-        Me.picBarber1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picBarber1.TabIndex = 0
-        Me.picBarber1.TabStop = False
+        Me.pctBarber1.BackColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(221, Byte), Integer))
+        Me.pctBarber1.BackgroundImage = CType(resources.GetObject("pctBarber1.BackgroundImage"), System.Drawing.Image)
+        Me.pctBarber1.Location = New System.Drawing.Point(20, 30)
+        Me.pctBarber1.Name = "pctBarber1"
+        Me.pctBarber1.Size = New System.Drawing.Size(140, 170)
+        Me.pctBarber1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pctBarber1.TabIndex = 0
+        Me.pctBarber1.TabStop = False
         '
         'pnlCheckOut
         '
+        Me.pnlCheckOut.Controls.Add(Me.btnCheckOutReset)
+        Me.pnlCheckOut.Controls.Add(Me.btnCheckOutBack)
         Me.pnlCheckOut.Controls.Add(Me.dtpExpDate)
         Me.pnlCheckOut.Controls.Add(Me.btnSubmit)
         Me.pnlCheckOut.Controls.Add(Me.pnlSummary)
@@ -1052,12 +1156,37 @@ Partial Class frmMain
         Me.pnlCheckOut.Controls.Add(Me.txtFName)
         Me.pnlCheckOut.Location = New System.Drawing.Point(154, 3)
         Me.pnlCheckOut.Name = "pnlCheckOut"
-        Me.pnlCheckOut.Size = New System.Drawing.Size(626, 478)
+        Me.pnlCheckOut.Size = New System.Drawing.Size(626, 485)
         Me.pnlCheckOut.TabIndex = 7
+        '
+        'btnCheckOutReset
+        '
+        Me.btnCheckOutReset.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
+        Me.btnCheckOutReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCheckOutReset.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCheckOutReset.Location = New System.Drawing.Point(449, 443)
+        Me.btnCheckOutReset.Name = "btnCheckOutReset"
+        Me.btnCheckOutReset.Size = New System.Drawing.Size(75, 23)
+        Me.btnCheckOutReset.TabIndex = 44
+        Me.btnCheckOutReset.Text = "&Reset"
+        Me.btnCheckOutReset.UseVisualStyleBackColor = False
+        '
+        'btnCheckOutBack
+        '
+        Me.btnCheckOutBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
+        Me.btnCheckOutBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCheckOutBack.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCheckOutBack.Location = New System.Drawing.Point(356, 443)
+        Me.btnCheckOutBack.Name = "btnCheckOutBack"
+        Me.btnCheckOutBack.Size = New System.Drawing.Size(75, 23)
+        Me.btnCheckOutBack.TabIndex = 43
+        Me.btnCheckOutBack.Text = "&Back"
+        Me.btnCheckOutBack.UseVisualStyleBackColor = False
         '
         'dtpExpDate
         '
         Me.dtpExpDate.CalendarFont = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpExpDate.CustomFormat = ""
         Me.dtpExpDate.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpExpDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.dtpExpDate.Location = New System.Drawing.Point(12, 398)
@@ -1070,8 +1199,9 @@ Partial Class frmMain
         'btnSubmit
         '
         Me.btnSubmit.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
+        Me.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSubmit.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSubmit.Location = New System.Drawing.Point(207, 443)
+        Me.btnSubmit.Location = New System.Drawing.Point(542, 443)
         Me.btnSubmit.Name = "btnSubmit"
         Me.btnSubmit.Size = New System.Drawing.Size(75, 23)
         Me.btnSubmit.TabIndex = 41
@@ -1084,7 +1214,7 @@ Partial Class frmMain
         Me.pnlSummary.Controls.Add(Me.lblSummary)
         Me.pnlSummary.Location = New System.Drawing.Point(356, 0)
         Me.pnlSummary.Name = "pnlSummary"
-        Me.pnlSummary.Size = New System.Drawing.Size(273, 478)
+        Me.pnlSummary.Size = New System.Drawing.Size(273, 421)
         Me.pnlSummary.TabIndex = 39
         '
         'lblSummary
@@ -1276,7 +1406,7 @@ Partial Class frmMain
         Me.cboCityTown.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.cboCityTown.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboCityTown.FormattingEnabled = True
-        Me.cboCityTown.Items.AddRange(New Object() {"Belmopan", "Belize City", "Corozal Town", "Orange Walk Town", "Bunque Viejo", "Dangriga", "Punta Gorda", "San Ignacio", "San Pedro", "NA"})
+        Me.cboCityTown.Items.AddRange(New Object() {"Belmopan", "Belize City", "Corozal Town", "Orange Walk Town", "Bunque Viejo", "Dangriga", "Punta Gorda", "San Ignacio", "San Pedro", "N/A"})
         Me.cboCityTown.Location = New System.Drawing.Point(149, 159)
         Me.cboCityTown.Name = "cboCityTown"
         Me.cboCityTown.Size = New System.Drawing.Size(135, 24)
@@ -1287,7 +1417,7 @@ Partial Class frmMain
         Me.cboDistrict.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.cboDistrict.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboDistrict.FormattingEnabled = True
-        Me.cboDistrict.Items.AddRange(New Object() {"Corozal", "Orange Walk", "Belize", "Cayo", "Stann Creek", "Toledo", "NA"})
+        Me.cboDistrict.Items.AddRange(New Object() {"Corozal", "Orange Walk", "Belize", "Cayo", "Stann Creek", "Toledo", "N/A"})
         Me.cboDistrict.Location = New System.Drawing.Point(12, 159)
         Me.cboDistrict.Name = "cboDistrict"
         Me.cboDistrict.Size = New System.Drawing.Size(121, 24)
@@ -1335,14 +1465,53 @@ Partial Class frmMain
         '
         'pnlSchedule
         '
+        Me.pnlSchedule.Controls.Add(Me.btnScheduleBack)
+        Me.pnlSchedule.Controls.Add(Me.btnScheduleNext)
+        Me.pnlSchedule.Controls.Add(Me.btnScheduleReset)
         Me.pnlSchedule.Controls.Add(Me.grbTimeSlots)
         Me.pnlSchedule.Controls.Add(Me.lblChooseDate)
         Me.pnlSchedule.Controls.Add(Me.lblAppointment)
         Me.pnlSchedule.Controls.Add(Me.dtpScheduleDate)
         Me.pnlSchedule.Location = New System.Drawing.Point(154, 0)
         Me.pnlSchedule.Name = "pnlSchedule"
-        Me.pnlSchedule.Size = New System.Drawing.Size(629, 481)
+        Me.pnlSchedule.Size = New System.Drawing.Size(629, 488)
         Me.pnlSchedule.TabIndex = 12
+        '
+        'btnScheduleBack
+        '
+        Me.btnScheduleBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
+        Me.btnScheduleBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnScheduleBack.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnScheduleBack.Location = New System.Drawing.Point(339, 446)
+        Me.btnScheduleBack.Name = "btnScheduleBack"
+        Me.btnScheduleBack.Size = New System.Drawing.Size(75, 23)
+        Me.btnScheduleBack.TabIndex = 33
+        Me.btnScheduleBack.Text = "&Back"
+        Me.btnScheduleBack.UseVisualStyleBackColor = False
+        '
+        'btnScheduleNext
+        '
+        Me.btnScheduleNext.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
+        Me.btnScheduleNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnScheduleNext.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnScheduleNext.Location = New System.Drawing.Point(435, 446)
+        Me.btnScheduleNext.Name = "btnScheduleNext"
+        Me.btnScheduleNext.Size = New System.Drawing.Size(75, 23)
+        Me.btnScheduleNext.TabIndex = 32
+        Me.btnScheduleNext.Text = "&Next"
+        Me.btnScheduleNext.UseVisualStyleBackColor = False
+        '
+        'btnScheduleReset
+        '
+        Me.btnScheduleReset.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
+        Me.btnScheduleReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnScheduleReset.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnScheduleReset.Location = New System.Drawing.Point(531, 446)
+        Me.btnScheduleReset.Name = "btnScheduleReset"
+        Me.btnScheduleReset.Size = New System.Drawing.Size(75, 23)
+        Me.btnScheduleReset.TabIndex = 31
+        Me.btnScheduleReset.Text = "&Reset"
+        Me.btnScheduleReset.UseVisualStyleBackColor = False
         '
         'grbTimeSlots
         '
@@ -1579,10 +1748,10 @@ Partial Class frmMain
         Me.radMorning1.ForeColor = System.Drawing.Color.White
         Me.radMorning1.Location = New System.Drawing.Point(12, 57)
         Me.radMorning1.Name = "radMorning1"
-        Me.radMorning1.Size = New System.Drawing.Size(100, 20)
+        Me.radMorning1.Size = New System.Drawing.Size(96, 20)
         Me.radMorning1.TabIndex = 5
         Me.radMorning1.TabStop = True
-        Me.radMorning1.Text = "8:00 - 8:30 "
+        Me.radMorning1.Text = "8:00 - 8:30"
         Me.radMorning1.UseVisualStyleBackColor = False
         '
         'lblChooseDate
@@ -1610,21 +1779,63 @@ Partial Class frmMain
         Me.dtpScheduleDate.Font = New System.Drawing.Font("Inter", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpScheduleDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.dtpScheduleDate.Location = New System.Drawing.Point(8, 73)
+        Me.dtpScheduleDate.MaxDate = New Date(2025, 12, 31, 0, 0, 0, 0)
+        Me.dtpScheduleDate.MinDate = New Date(1950, 1, 1, 0, 0, 0, 0)
         Me.dtpScheduleDate.Name = "dtpScheduleDate"
         Me.dtpScheduleDate.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.dtpScheduleDate.Size = New System.Drawing.Size(119, 21)
         Me.dtpScheduleDate.TabIndex = 1
+        Me.dtpScheduleDate.Value = New Date(2023, 2, 11, 0, 0, 0, 0)
+        '
+        'btnBarberReset
+        '
+        Me.btnBarberReset.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
+        Me.btnBarberReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBarberReset.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBarberReset.ForeColor = System.Drawing.Color.Black
+        Me.btnBarberReset.Location = New System.Drawing.Point(522, 495)
+        Me.btnBarberReset.Name = "btnBarberReset"
+        Me.btnBarberReset.Size = New System.Drawing.Size(75, 23)
+        Me.btnBarberReset.TabIndex = 36
+        Me.btnBarberReset.Text = "Reset"
+        Me.btnBarberReset.UseVisualStyleBackColor = False
+        '
+        'btnBarberNext
+        '
+        Me.btnBarberNext.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
+        Me.btnBarberNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBarberNext.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBarberNext.ForeColor = System.Drawing.Color.Black
+        Me.btnBarberNext.Location = New System.Drawing.Point(434, 495)
+        Me.btnBarberNext.Name = "btnBarberNext"
+        Me.btnBarberNext.Size = New System.Drawing.Size(75, 23)
+        Me.btnBarberNext.TabIndex = 37
+        Me.btnBarberNext.Text = "&Next"
+        Me.btnBarberNext.UseVisualStyleBackColor = False
+        '
+        'btnBarberBack
+        '
+        Me.btnBarberBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
+        Me.btnBarberBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBarberBack.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBarberBack.Location = New System.Drawing.Point(346, 495)
+        Me.btnBarberBack.Name = "btnBarberBack"
+        Me.btnBarberBack.Size = New System.Drawing.Size(75, 23)
+        Me.btnBarberBack.TabIndex = 38
+        Me.btnBarberBack.Text = "&Back"
+        Me.btnBarberBack.UseVisualStyleBackColor = False
         '
         'frmMain
         '
+        Me.AcceptButton = Me.btnSubmit
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.btnExitServices
-        Me.ClientSize = New System.Drawing.Size(784, 481)
-        Me.Controls.Add(Me.pnlServices)
-        Me.Controls.Add(Me.pnlSchedule)
-        Me.Controls.Add(Me.pnlBarber)
+        Me.ClientSize = New System.Drawing.Size(784, 491)
         Me.Controls.Add(Me.pnlCheckOut)
+        Me.Controls.Add(Me.pnlServices)
+        Me.Controls.Add(Me.pnlBarber)
+        Me.Controls.Add(Me.pnlSchedule)
         Me.Controls.Add(Me.pnlNavbar)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmMain"
@@ -1652,12 +1863,18 @@ Partial Class frmMain
         CType(Me.pctCombOver, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlBarber.ResumeLayout(False)
         Me.pnlBarber.PerformLayout()
-        CType(Me.picBarber6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picBarber5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picBarber4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picBarber3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picBarber2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picBarber1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pctBarber6Rating, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pctBarber5Rating, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pctBarber4Rating, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pctBarber3Rating, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pctBarber2Rating, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pctBarber1Rating, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pctBarber6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pctBarber5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pctBarber4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pctBarber3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pctBarber2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pctBarber1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlCheckOut.ResumeLayout(False)
         Me.pnlCheckOut.PerformLayout()
         Me.pnlSummary.ResumeLayout(False)
@@ -1724,12 +1941,12 @@ Partial Class frmMain
     Friend WithEvents lblAddOns As Label
     Friend WithEvents pnlServices As Panel
     Friend WithEvents pnlBarber As Panel
-    Friend WithEvents picBarber6 As PictureBox
-    Friend WithEvents picBarber5 As PictureBox
-    Friend WithEvents picBarber4 As PictureBox
-    Friend WithEvents picBarber3 As PictureBox
-    Friend WithEvents picBarber2 As PictureBox
-    Friend WithEvents picBarber1 As PictureBox
+    Friend WithEvents pctBarber6 As PictureBox
+    Friend WithEvents pctBarber5 As PictureBox
+    Friend WithEvents pctBarber4 As PictureBox
+    Friend WithEvents pctBarber3 As PictureBox
+    Friend WithEvents pctBarber2 As PictureBox
+    Friend WithEvents pctBarber1 As PictureBox
     Friend WithEvents radBarber1 As RadioButton
     Friend WithEvents pnlCheckOut As Panel
     Friend WithEvents cboCityTown As ComboBox
@@ -1791,4 +2008,19 @@ Partial Class frmMain
     Friend WithEvents btnSubmit As Button
     Friend WithEvents btnExitServices As Button
     Friend WithEvents dtpExpDate As DateTimePicker
+    Friend WithEvents btnServicesNext As Button
+    Friend WithEvents btnScheduleBack As Button
+    Friend WithEvents btnScheduleNext As Button
+    Friend WithEvents btnScheduleReset As Button
+    Friend WithEvents btnCheckOutBack As Button
+    Friend WithEvents btnCheckOutReset As Button
+    Friend WithEvents pctBarber1Rating As PictureBox
+    Friend WithEvents pctBarber2Rating As PictureBox
+    Friend WithEvents pctBarber6Rating As PictureBox
+    Friend WithEvents pctBarber5Rating As PictureBox
+    Friend WithEvents pctBarber4Rating As PictureBox
+    Friend WithEvents pctBarber3Rating As PictureBox
+    Friend WithEvents btnBarberBack As Button
+    Friend WithEvents btnBarberNext As Button
+    Friend WithEvents btnBarberReset As Button
 End Class

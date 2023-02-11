@@ -22,8 +22,11 @@
                           "$" & frmMain.dbFaceMaskPrice & ".00" & vbCrLf &
                           "$" & frmMain.dbShapeUpPrice & ".00"
 
+        dbServiceTotal = frmMain.dbHaircutPrice + frmMain.dbFadeLevelPrice + frmMain.dbMoustachePrice + frmMain.dbBeardPrice + frmMain.dbEyebrowPrice + frmMain.dbFaceMaskPrice + frmMain.dbShapeUpPrice
+
         lblExtraServicesOut.Text = strExtraServices 'Prints Customer Extra Services
         lblExtraServicesPriceOut.Text = dbExtraServices 'Prints Customer Extra Services Prices
+        lblServiceTotalOut.Text = "$" & dbServiceTotal & ".00"
 
         lblBarberOut.Text = frmMain.strBarber 'Prints Customer Barber
         lblDateTimeOut.Text = frmMain.strScheduleDate & " at " & frmMain.strTimeSlot 'Prints Time and Date
@@ -41,4 +44,12 @@
 
     End Sub
 
+    Private Sub btnOExit_Click(sender As Object, e As EventArgs) Handles btnOExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub btnOBack_Click(sender As Object, e As EventArgs) Handles btnOBack.Click
+        frmMain.Show()
+        Me.Close()
+    End Sub
 End Class

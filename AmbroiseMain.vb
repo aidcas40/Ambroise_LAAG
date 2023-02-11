@@ -1,4 +1,12 @@
-﻿Public Class frmMain
+﻿'----------------------------------------------------------------------------------
+'Program Title: 		Ambroise
+'Program Author: 		Aiden Castillo, Luis Garcia
+'Date Created:  		11 Feb, 2023
+'School:			    Corozal Junior College
+'Course Number/Name:	CS206 -Programming II
+'Program Description:	This program demonstrates a Barber Booking System with various GUI controls and their functionalities within. It also Outputs the inputted data from the Main Form to the Output Form. 
+'----------------------------------------------------------------------------------
+Public Class frmMain
 
     'Declaring Variables for Services Section
     Public strHaircut As String
@@ -76,23 +84,117 @@
         Me.Close()
     End Sub
 
+    'Buttons for Services Panel
+    Private Sub btnServicesNext_Click(sender As Object, e As EventArgs) Handles btnServicesNext.Click
+        pnlServices.Visible = False
+        pnlBarber.Visible = True
+        pnlSchedule.Visible = False
+        pnlCheckOut.Visible = False
+    End Sub
+
     Private Sub btnServicesReset_Click(sender As Object, e As EventArgs) Handles btnServicesReset.Click
-        For Each control As Control In pnlServices.Controls
+        For Each control As Control In pnlHaircut.Controls
+            If TypeOf control Is RadioButton Then
+                DirectCast(control, RadioButton).Checked = False
+            End If
+        Next
+        For Each control As Control In pnlAddOns.Controls
+            If TypeOf control Is RichTextBox Then
+                control.Text = ""
+            End If
+        Next
+        For Each control As Control In grbExtraServices.Controls
+            If TypeOf control Is CheckBox Then
+                DirectCast(control, CheckBox).Checked = False
+            End If
+        Next
+        For Each control As Control In grbFade.Controls
+            If TypeOf control Is RadioButton Then
+                DirectCast(control, RadioButton).Checked = False
+            End If
+        Next
+    End Sub
+
+    'Buttons for the Barber Panel
+    Private Sub btnBarberBack_Click(sender As Object, e As EventArgs) Handles btnBarberBack.Click
+        pnlServices.Visible = True
+        pnlBarber.Visible = False
+        pnlSchedule.Visible = False
+        pnlCheckOut.Visible = False
+    End Sub
+
+    Private Sub btnBarberNext_Click(sender As Object, e As EventArgs) Handles btnBarberNext.Click
+        pnlServices.Visible = False
+        pnlBarber.Visible = False
+        pnlSchedule.Visible = True
+        pnlCheckOut.Visible = False
+    End Sub
+
+    Private Sub btnBarberReset_Click(sender As Object, e As EventArgs) Handles btnBarberReset.Click
+        For Each control As Control In pnlBarber.Controls
+            If TypeOf control Is RadioButton Then
+                DirectCast(control, RadioButton).Checked = False
+            End If
+        Next
+    End Sub
+
+    'Buttons for Schedule Section
+    Private Sub btnScheduleBack_Click(sender As Object, e As EventArgs) Handles btnScheduleBack.Click
+        pnlServices.Visible = False
+        pnlBarber.Visible = True
+        pnlSchedule.Visible = False
+        pnlCheckOut.Visible = False
+    End Sub
+
+    Private Sub btnScheduleNext_Click(sender As Object, e As EventArgs) Handles btnScheduleNext.Click
+        pnlServices.Visible = False
+        pnlBarber.Visible = False
+        pnlSchedule.Visible = False
+        pnlCheckOut.Visible = True
+    End Sub
+
+    Private Sub btnScheduleReset_Click(sender As Object, e As EventArgs) Handles btnScheduleReset.Click
+        For Each control As Control In pnlSchedule.Controls
+            If TypeOf control Is DateTimePicker Then
+                control.Text = Date.Now
+            End If
+        Next
+        For Each control As Control In grbTimeSlots.Controls
+            If TypeOf control Is RadioButton Then
+                DirectCast(control, RadioButton).Checked = False
+            End If
+        Next
+    End Sub
+
+    'Buttons for CheckOut Panel
+    Private Sub btnCheckOutBack_Click(sender As Object, e As EventArgs) Handles btnCheckOutBack.Click
+        pnlServices.Visible = False
+        pnlBarber.Visible = False
+        pnlSchedule.Visible = True
+        pnlCheckOut.Visible = False
+    End Sub
+
+    Private Sub btnCheckOutReset_Click(sender As Object, e As EventArgs) Handles btnCheckOutReset.Click
+        For Each control As Control In pnlCheckOut.Controls
             If TypeOf control Is TextBox Then
-                Dim textBox As TextBox = DirectCast(control, TextBox)
-                textBox.Text = ""
-            ElseIf TypeOf control Is RadioButton Then
-                Dim radioButton As RadioButton = DirectCast(control, RadioButton)
-                radioButton.Checked = False
-            ElseIf TypeOf control Is CheckBox Then
-                Dim checkBox As CheckBox = DirectCast(control, CheckBox)
-                checkBox.Checked = False
+                control.Text = ""
+            End If
+            If TypeOf control Is ComboBox Then
+                control.Text = ""
+            End If
+            If TypeOf control Is NumericUpDown Then
+                control.Text = ""
+            End If
+            If TypeOf control Is MaskedTextBox Then
+                control.Text = ""
+            End If
+            If TypeOf control Is DateTimePicker Then
+                control.Text = Date.Now
             End If
         Next
     End Sub
 
     Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
-
         'Checking which haircut the customer picked 
         If radBuzzCut.Checked Then
             strHaircut = radBuzzCut.Text

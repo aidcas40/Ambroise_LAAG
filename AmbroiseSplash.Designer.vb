@@ -32,7 +32,7 @@ Partial Class frmSplashScreen
         'pctLogoSplash
         '
         Me.pctLogoSplash.Image = CType(resources.GetObject("pctLogoSplash.Image"), System.Drawing.Image)
-        Me.pctLogoSplash.Location = New System.Drawing.Point(324, 72)
+        Me.pctLogoSplash.Location = New System.Drawing.Point(315, 150)
         Me.pctLogoSplash.Name = "pctLogoSplash"
         Me.pctLogoSplash.Size = New System.Drawing.Size(176, 132)
         Me.pctLogoSplash.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -44,7 +44,7 @@ Partial Class frmSplashScreen
         Me.lblProgName.AutoSize = True
         Me.lblProgName.Font = New System.Drawing.Font("Inter", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblProgName.ForeColor = System.Drawing.Color.White
-        Me.lblProgName.Location = New System.Drawing.Point(359, 217)
+        Me.lblProgName.Location = New System.Drawing.Point(350, 293)
         Me.lblProgName.Name = "lblProgName"
         Me.lblProgName.Size = New System.Drawing.Size(106, 25)
         Me.lblProgName.TabIndex = 1
@@ -55,7 +55,7 @@ Partial Class frmSplashScreen
         Me.lblCopyright.AutoSize = True
         Me.lblCopyright.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCopyright.ForeColor = System.Drawing.Color.White
-        Me.lblCopyright.Location = New System.Drawing.Point(358, 255)
+        Me.lblCopyright.Location = New System.Drawing.Point(343, 329)
         Me.lblCopyright.Name = "lblCopyright"
         Me.lblCopyright.Size = New System.Drawing.Size(121, 16)
         Me.lblCopyright.TabIndex = 2
@@ -66,7 +66,7 @@ Partial Class frmSplashScreen
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(800, 530)
         Me.Controls.Add(Me.lblCopyright)
         Me.Controls.Add(Me.lblProgName)
         Me.Controls.Add(Me.pctLogoSplash)

@@ -24,6 +24,17 @@ Partial Class frmOutput
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmOutput))
         Me.grbOHaircutDetails = New System.Windows.Forms.GroupBox()
+        Me.rtxtHaircutDetailsOut = New System.Windows.Forms.RichTextBox()
+        Me.lblDateTimeOut = New System.Windows.Forms.Label()
+        Me.lblBarberOut = New System.Windows.Forms.Label()
+        Me.lblODateTime = New System.Windows.Forms.Label()
+        Me.lblOBarber = New System.Windows.Forms.Label()
+        Me.lblServiceTotal = New System.Windows.Forms.Label()
+        Me.lblExtraServicesPriceOut = New System.Windows.Forms.Label()
+        Me.lblExtraServicesOut = New System.Windows.Forms.Label()
+        Me.lblFadeLevelPriceOut = New System.Windows.Forms.Label()
+        Me.lblFadeLevelOut = New System.Windows.Forms.Label()
+        Me.lblHaircutPriceOut = New System.Windows.Forms.Label()
         Me.lblHaircutTypeOut = New System.Windows.Forms.Label()
         Me.lblPrice = New System.Windows.Forms.Label()
         Me.lblService = New System.Windows.Forms.Label()
@@ -45,17 +56,9 @@ Partial Class frmOutput
         Me.lblOCardName = New System.Windows.Forms.Label()
         Me.lblCardNumOut = New System.Windows.Forms.Label()
         Me.lblOCardNum = New System.Windows.Forms.Label()
-        Me.lblHaircutPriceOut = New System.Windows.Forms.Label()
-        Me.lblFadeLevelOut = New System.Windows.Forms.Label()
-        Me.lblFadeLevelPriceOut = New System.Windows.Forms.Label()
-        Me.lblExtraServicesOut = New System.Windows.Forms.Label()
-        Me.lblExtraServicesPriceOut = New System.Windows.Forms.Label()
-        Me.lblServiceTotal = New System.Windows.Forms.Label()
-        Me.lblOBarber = New System.Windows.Forms.Label()
-        Me.lblODateTime = New System.Windows.Forms.Label()
-        Me.lblBarberOut = New System.Windows.Forms.Label()
-        Me.lblDateTimeOut = New System.Windows.Forms.Label()
-        Me.rtxtHaircutDetailsOut = New System.Windows.Forms.RichTextBox()
+        Me.btnOExit = New System.Windows.Forms.Button()
+        Me.btnOBack = New System.Windows.Forms.Button()
+        Me.lblServiceTotalOut = New System.Windows.Forms.Label()
         Me.grbOHaircutDetails.SuspendLayout()
         Me.grbOBillingAddress.SuspendLayout()
         Me.grbOPaymentInfo.SuspendLayout()
@@ -64,6 +67,7 @@ Partial Class frmOutput
         'grbOHaircutDetails
         '
         Me.grbOHaircutDetails.BackColor = System.Drawing.Color.FromArgb(CType(CType(152, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.grbOHaircutDetails.Controls.Add(Me.lblServiceTotalOut)
         Me.grbOHaircutDetails.Controls.Add(Me.rtxtHaircutDetailsOut)
         Me.grbOHaircutDetails.Controls.Add(Me.lblDateTimeOut)
         Me.grbOHaircutDetails.Controls.Add(Me.lblBarberOut)
@@ -86,6 +90,107 @@ Partial Class frmOutput
         Me.grbOHaircutDetails.TabIndex = 0
         Me.grbOHaircutDetails.TabStop = False
         Me.grbOHaircutDetails.Text = "Haircut Details"
+        '
+        'rtxtHaircutDetailsOut
+        '
+        Me.rtxtHaircutDetailsOut.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.rtxtHaircutDetailsOut.Location = New System.Drawing.Point(12, 339)
+        Me.rtxtHaircutDetailsOut.Name = "rtxtHaircutDetailsOut"
+        Me.rtxtHaircutDetailsOut.ReadOnly = True
+        Me.rtxtHaircutDetailsOut.Size = New System.Drawing.Size(302, 92)
+        Me.rtxtHaircutDetailsOut.TabIndex = 17
+        Me.rtxtHaircutDetailsOut.Text = ""
+        '
+        'lblDateTimeOut
+        '
+        Me.lblDateTimeOut.AutoSize = True
+        Me.lblDateTimeOut.Location = New System.Drawing.Point(158, 296)
+        Me.lblDateTimeOut.Name = "lblDateTimeOut"
+        Me.lblDateTimeOut.Size = New System.Drawing.Size(11, 16)
+        Me.lblDateTimeOut.TabIndex = 16
+        Me.lblDateTimeOut.Text = "I"
+        '
+        'lblBarberOut
+        '
+        Me.lblBarberOut.AutoSize = True
+        Me.lblBarberOut.Location = New System.Drawing.Point(158, 265)
+        Me.lblBarberOut.Name = "lblBarberOut"
+        Me.lblBarberOut.Size = New System.Drawing.Size(11, 16)
+        Me.lblBarberOut.TabIndex = 14
+        Me.lblBarberOut.Text = "I"
+        '
+        'lblODateTime
+        '
+        Me.lblODateTime.AutoSize = True
+        Me.lblODateTime.Location = New System.Drawing.Point(12, 296)
+        Me.lblODateTime.Name = "lblODateTime"
+        Me.lblODateTime.Size = New System.Drawing.Size(72, 16)
+        Me.lblODateTime.TabIndex = 12
+        Me.lblODateTime.Text = "Date/Time"
+        '
+        'lblOBarber
+        '
+        Me.lblOBarber.AutoSize = True
+        Me.lblOBarber.Location = New System.Drawing.Point(12, 265)
+        Me.lblOBarber.Name = "lblOBarber"
+        Me.lblOBarber.Size = New System.Drawing.Size(49, 16)
+        Me.lblOBarber.TabIndex = 11
+        Me.lblOBarber.Text = "Barber"
+        '
+        'lblServiceTotal
+        '
+        Me.lblServiceTotal.AutoSize = True
+        Me.lblServiceTotal.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblServiceTotal.Location = New System.Drawing.Point(12, 210)
+        Me.lblServiceTotal.Name = "lblServiceTotal"
+        Me.lblServiceTotal.Size = New System.Drawing.Size(94, 16)
+        Me.lblServiceTotal.TabIndex = 10
+        Me.lblServiceTotal.Text = "Service Total"
+        '
+        'lblExtraServicesPriceOut
+        '
+        Me.lblExtraServicesPriceOut.AutoSize = True
+        Me.lblExtraServicesPriceOut.Location = New System.Drawing.Point(158, 97)
+        Me.lblExtraServicesPriceOut.Name = "lblExtraServicesPriceOut"
+        Me.lblExtraServicesPriceOut.Size = New System.Drawing.Size(11, 16)
+        Me.lblExtraServicesPriceOut.TabIndex = 9
+        Me.lblExtraServicesPriceOut.Text = "l"
+        '
+        'lblExtraServicesOut
+        '
+        Me.lblExtraServicesOut.AutoSize = True
+        Me.lblExtraServicesOut.Location = New System.Drawing.Point(12, 97)
+        Me.lblExtraServicesOut.Name = "lblExtraServicesOut"
+        Me.lblExtraServicesOut.Size = New System.Drawing.Size(11, 16)
+        Me.lblExtraServicesOut.TabIndex = 8
+        Me.lblExtraServicesOut.Text = "l"
+        '
+        'lblFadeLevelPriceOut
+        '
+        Me.lblFadeLevelPriceOut.AutoSize = True
+        Me.lblFadeLevelPriceOut.Location = New System.Drawing.Point(158, 180)
+        Me.lblFadeLevelPriceOut.Name = "lblFadeLevelPriceOut"
+        Me.lblFadeLevelPriceOut.Size = New System.Drawing.Size(11, 16)
+        Me.lblFadeLevelPriceOut.TabIndex = 7
+        Me.lblFadeLevelPriceOut.Text = "l"
+        '
+        'lblFadeLevelOut
+        '
+        Me.lblFadeLevelOut.AutoSize = True
+        Me.lblFadeLevelOut.Location = New System.Drawing.Point(12, 180)
+        Me.lblFadeLevelOut.Name = "lblFadeLevelOut"
+        Me.lblFadeLevelOut.Size = New System.Drawing.Size(11, 16)
+        Me.lblFadeLevelOut.TabIndex = 6
+        Me.lblFadeLevelOut.Text = "l"
+        '
+        'lblHaircutPriceOut
+        '
+        Me.lblHaircutPriceOut.AutoSize = True
+        Me.lblHaircutPriceOut.Location = New System.Drawing.Point(158, 70)
+        Me.lblHaircutPriceOut.Name = "lblHaircutPriceOut"
+        Me.lblHaircutPriceOut.Size = New System.Drawing.Size(11, 16)
+        Me.lblHaircutPriceOut.TabIndex = 5
+        Me.lblHaircutPriceOut.Text = "l"
         '
         'lblHaircutTypeOut
         '
@@ -299,112 +404,46 @@ Partial Class frmOutput
         Me.lblOCardNum.TabIndex = 2
         Me.lblOCardNum.Text = "Card Number"
         '
-        'lblHaircutPriceOut
+        'btnOExit
         '
-        Me.lblHaircutPriceOut.AutoSize = True
-        Me.lblHaircutPriceOut.Location = New System.Drawing.Point(158, 70)
-        Me.lblHaircutPriceOut.Name = "lblHaircutPriceOut"
-        Me.lblHaircutPriceOut.Size = New System.Drawing.Size(11, 16)
-        Me.lblHaircutPriceOut.TabIndex = 5
-        Me.lblHaircutPriceOut.Text = "l"
+        Me.btnOExit.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
+        Me.btnOExit.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.btnOExit.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnOExit.Location = New System.Drawing.Point(697, 455)
+        Me.btnOExit.Name = "btnOExit"
+        Me.btnOExit.Size = New System.Drawing.Size(75, 23)
+        Me.btnOExit.TabIndex = 3
+        Me.btnOExit.Text = "&Exit"
+        Me.btnOExit.UseVisualStyleBackColor = False
         '
-        'lblFadeLevelOut
+        'btnOBack
         '
-        Me.lblFadeLevelOut.AutoSize = True
-        Me.lblFadeLevelOut.Location = New System.Drawing.Point(12, 180)
-        Me.lblFadeLevelOut.Name = "lblFadeLevelOut"
-        Me.lblFadeLevelOut.Size = New System.Drawing.Size(11, 16)
-        Me.lblFadeLevelOut.TabIndex = 6
-        Me.lblFadeLevelOut.Text = "l"
+        Me.btnOBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(134, Byte), Integer))
+        Me.btnOBack.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnOBack.Location = New System.Drawing.Point(616, 455)
+        Me.btnOBack.Name = "btnOBack"
+        Me.btnOBack.Size = New System.Drawing.Size(75, 23)
+        Me.btnOBack.TabIndex = 4
+        Me.btnOBack.Text = "&Back"
+        Me.btnOBack.UseVisualStyleBackColor = False
         '
-        'lblFadeLevelPriceOut
+        'lblServiceTotalOut
         '
-        Me.lblFadeLevelPriceOut.AutoSize = True
-        Me.lblFadeLevelPriceOut.Location = New System.Drawing.Point(158, 180)
-        Me.lblFadeLevelPriceOut.Name = "lblFadeLevelPriceOut"
-        Me.lblFadeLevelPriceOut.Size = New System.Drawing.Size(11, 16)
-        Me.lblFadeLevelPriceOut.TabIndex = 7
-        Me.lblFadeLevelPriceOut.Text = "l"
-        '
-        'lblExtraServicesOut
-        '
-        Me.lblExtraServicesOut.AutoSize = True
-        Me.lblExtraServicesOut.Location = New System.Drawing.Point(12, 97)
-        Me.lblExtraServicesOut.Name = "lblExtraServicesOut"
-        Me.lblExtraServicesOut.Size = New System.Drawing.Size(11, 16)
-        Me.lblExtraServicesOut.TabIndex = 8
-        Me.lblExtraServicesOut.Text = "l"
-        '
-        'lblExtraServicesPriceOut
-        '
-        Me.lblExtraServicesPriceOut.AutoSize = True
-        Me.lblExtraServicesPriceOut.Location = New System.Drawing.Point(158, 97)
-        Me.lblExtraServicesPriceOut.Name = "lblExtraServicesPriceOut"
-        Me.lblExtraServicesPriceOut.Size = New System.Drawing.Size(11, 16)
-        Me.lblExtraServicesPriceOut.TabIndex = 9
-        Me.lblExtraServicesPriceOut.Text = "l"
-        '
-        'lblServiceTotal
-        '
-        Me.lblServiceTotal.AutoSize = True
-        Me.lblServiceTotal.Font = New System.Drawing.Font("Inter", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblServiceTotal.Location = New System.Drawing.Point(12, 210)
-        Me.lblServiceTotal.Name = "lblServiceTotal"
-        Me.lblServiceTotal.Size = New System.Drawing.Size(94, 16)
-        Me.lblServiceTotal.TabIndex = 10
-        Me.lblServiceTotal.Text = "Service Total"
-        '
-        'lblOBarber
-        '
-        Me.lblOBarber.AutoSize = True
-        Me.lblOBarber.Location = New System.Drawing.Point(12, 265)
-        Me.lblOBarber.Name = "lblOBarber"
-        Me.lblOBarber.Size = New System.Drawing.Size(49, 16)
-        Me.lblOBarber.TabIndex = 11
-        Me.lblOBarber.Text = "Barber"
-        '
-        'lblODateTime
-        '
-        Me.lblODateTime.AutoSize = True
-        Me.lblODateTime.Location = New System.Drawing.Point(12, 296)
-        Me.lblODateTime.Name = "lblODateTime"
-        Me.lblODateTime.Size = New System.Drawing.Size(72, 16)
-        Me.lblODateTime.TabIndex = 12
-        Me.lblODateTime.Text = "Date/Time"
-        '
-        'lblBarberOut
-        '
-        Me.lblBarberOut.AutoSize = True
-        Me.lblBarberOut.Location = New System.Drawing.Point(158, 265)
-        Me.lblBarberOut.Name = "lblBarberOut"
-        Me.lblBarberOut.Size = New System.Drawing.Size(11, 16)
-        Me.lblBarberOut.TabIndex = 14
-        Me.lblBarberOut.Text = "I"
-        '
-        'lblDateTimeOut
-        '
-        Me.lblDateTimeOut.AutoSize = True
-        Me.lblDateTimeOut.Location = New System.Drawing.Point(158, 296)
-        Me.lblDateTimeOut.Name = "lblDateTimeOut"
-        Me.lblDateTimeOut.Size = New System.Drawing.Size(11, 16)
-        Me.lblDateTimeOut.TabIndex = 16
-        Me.lblDateTimeOut.Text = "I"
-        '
-        'rtxtHaircutDetailsOut
-        '
-        Me.rtxtHaircutDetailsOut.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.rtxtHaircutDetailsOut.Location = New System.Drawing.Point(12, 339)
-        Me.rtxtHaircutDetailsOut.Name = "rtxtHaircutDetailsOut"
-        Me.rtxtHaircutDetailsOut.ReadOnly = True
-        Me.rtxtHaircutDetailsOut.Size = New System.Drawing.Size(302, 92)
-        Me.rtxtHaircutDetailsOut.TabIndex = 17
-        Me.rtxtHaircutDetailsOut.Text = ""
+        Me.lblServiceTotalOut.AutoSize = True
+        Me.lblServiceTotalOut.Location = New System.Drawing.Point(158, 210)
+        Me.lblServiceTotalOut.Name = "lblServiceTotalOut"
+        Me.lblServiceTotalOut.Size = New System.Drawing.Size(11, 16)
+        Me.lblServiceTotalOut.TabIndex = 18
+        Me.lblServiceTotalOut.Text = "l"
         '
         'frmOutput
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(784, 461)
+        Me.CancelButton = Me.btnOExit
+        Me.ClientSize = New System.Drawing.Size(784, 481)
+        Me.Controls.Add(Me.btnOBack)
+        Me.Controls.Add(Me.btnOExit)
         Me.Controls.Add(Me.grbOPaymentInfo)
         Me.Controls.Add(Me.grbOBillingAddress)
         Me.Controls.Add(Me.grbOHaircutDetails)
@@ -455,4 +494,7 @@ Partial Class frmOutput
     Friend WithEvents lblBarberOut As Label
     Friend WithEvents lblDateTimeOut As Label
     Friend WithEvents rtxtHaircutDetailsOut As RichTextBox
+    Friend WithEvents btnOExit As Button
+    Friend WithEvents btnOBack As Button
+    Friend WithEvents lblServiceTotalOut As Label
 End Class
