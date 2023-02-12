@@ -96,9 +96,9 @@ Partial Class frmOutput
         Me.lblServiceTotalOut.AutoSize = True
         Me.lblServiceTotalOut.Location = New System.Drawing.Point(158, 210)
         Me.lblServiceTotalOut.Name = "lblServiceTotalOut"
-        Me.lblServiceTotalOut.Size = New System.Drawing.Size(11, 16)
+        Me.lblServiceTotalOut.Size = New System.Drawing.Size(0, 16)
         Me.lblServiceTotalOut.TabIndex = 18
-        Me.lblServiceTotalOut.Text = "l"
+        Me.lblServiceTotalOut.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'rtxtHaircutDetailsOut
         '
@@ -116,18 +116,16 @@ Partial Class frmOutput
         Me.lblDateTimeOut.AutoSize = True
         Me.lblDateTimeOut.Location = New System.Drawing.Point(158, 296)
         Me.lblDateTimeOut.Name = "lblDateTimeOut"
-        Me.lblDateTimeOut.Size = New System.Drawing.Size(11, 16)
+        Me.lblDateTimeOut.Size = New System.Drawing.Size(0, 16)
         Me.lblDateTimeOut.TabIndex = 16
-        Me.lblDateTimeOut.Text = "I"
         '
         'lblBarberOut
         '
         Me.lblBarberOut.AutoSize = True
         Me.lblBarberOut.Location = New System.Drawing.Point(158, 265)
         Me.lblBarberOut.Name = "lblBarberOut"
-        Me.lblBarberOut.Size = New System.Drawing.Size(11, 16)
+        Me.lblBarberOut.Size = New System.Drawing.Size(0, 16)
         Me.lblBarberOut.TabIndex = 14
-        Me.lblBarberOut.Text = "I"
         '
         'lblODateTime
         '
@@ -162,54 +160,51 @@ Partial Class frmOutput
         Me.lblExtraServicesPriceOut.AutoSize = True
         Me.lblExtraServicesPriceOut.Location = New System.Drawing.Point(158, 125)
         Me.lblExtraServicesPriceOut.Name = "lblExtraServicesPriceOut"
-        Me.lblExtraServicesPriceOut.Size = New System.Drawing.Size(11, 16)
+        Me.lblExtraServicesPriceOut.Size = New System.Drawing.Size(0, 16)
         Me.lblExtraServicesPriceOut.TabIndex = 9
-        Me.lblExtraServicesPriceOut.Text = "l"
+        Me.lblExtraServicesPriceOut.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'lblExtraServicesOut
         '
         Me.lblExtraServicesOut.AutoSize = True
         Me.lblExtraServicesOut.Location = New System.Drawing.Point(12, 125)
         Me.lblExtraServicesOut.Name = "lblExtraServicesOut"
-        Me.lblExtraServicesOut.Size = New System.Drawing.Size(11, 16)
+        Me.lblExtraServicesOut.Size = New System.Drawing.Size(0, 16)
         Me.lblExtraServicesOut.TabIndex = 8
-        Me.lblExtraServicesOut.Text = "l"
         '
         'lblFadeLevelPriceOut
         '
         Me.lblFadeLevelPriceOut.AutoSize = True
         Me.lblFadeLevelPriceOut.Location = New System.Drawing.Point(158, 97)
         Me.lblFadeLevelPriceOut.Name = "lblFadeLevelPriceOut"
-        Me.lblFadeLevelPriceOut.Size = New System.Drawing.Size(11, 16)
+        Me.lblFadeLevelPriceOut.Size = New System.Drawing.Size(0, 16)
         Me.lblFadeLevelPriceOut.TabIndex = 7
-        Me.lblFadeLevelPriceOut.Text = "l"
+        Me.lblFadeLevelPriceOut.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'lblFadeLevelOut
         '
         Me.lblFadeLevelOut.AutoSize = True
         Me.lblFadeLevelOut.Location = New System.Drawing.Point(12, 97)
         Me.lblFadeLevelOut.Name = "lblFadeLevelOut"
-        Me.lblFadeLevelOut.Size = New System.Drawing.Size(11, 16)
+        Me.lblFadeLevelOut.Size = New System.Drawing.Size(0, 16)
         Me.lblFadeLevelOut.TabIndex = 6
-        Me.lblFadeLevelOut.Text = "l"
         '
         'lblHaircutPriceOut
         '
         Me.lblHaircutPriceOut.AutoSize = True
         Me.lblHaircutPriceOut.Location = New System.Drawing.Point(158, 70)
         Me.lblHaircutPriceOut.Name = "lblHaircutPriceOut"
-        Me.lblHaircutPriceOut.Size = New System.Drawing.Size(11, 16)
+        Me.lblHaircutPriceOut.Size = New System.Drawing.Size(0, 16)
         Me.lblHaircutPriceOut.TabIndex = 5
-        Me.lblHaircutPriceOut.Text = "l"
+        Me.lblHaircutPriceOut.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'lblHaircutTypeOut
         '
         Me.lblHaircutTypeOut.AutoSize = True
         Me.lblHaircutTypeOut.Location = New System.Drawing.Point(12, 70)
         Me.lblHaircutTypeOut.Name = "lblHaircutTypeOut"
-        Me.lblHaircutTypeOut.Size = New System.Drawing.Size(11, 16)
+        Me.lblHaircutTypeOut.Size = New System.Drawing.Size(0, 16)
         Me.lblHaircutTypeOut.TabIndex = 4
-        Me.lblHaircutTypeOut.Text = "l"
         '
         'lblPrice
         '
@@ -255,9 +250,8 @@ Partial Class frmOutput
         Me.lblAgeOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.lblAgeOut.Location = New System.Drawing.Point(158, 146)
         Me.lblAgeOut.Name = "lblAgeOut"
-        Me.lblAgeOut.Size = New System.Drawing.Size(11, 16)
+        Me.lblAgeOut.Size = New System.Drawing.Size(0, 16)
         Me.lblAgeOut.TabIndex = 8
-        Me.lblAgeOut.Text = "i"
         '
         'lblOAge
         '
@@ -274,9 +268,8 @@ Partial Class frmOutput
         Me.lblPhoneNumOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.lblPhoneNumOut.Location = New System.Drawing.Point(158, 114)
         Me.lblPhoneNumOut.Name = "lblPhoneNumOut"
-        Me.lblPhoneNumOut.Size = New System.Drawing.Size(11, 16)
+        Me.lblPhoneNumOut.Size = New System.Drawing.Size(0, 16)
         Me.lblPhoneNumOut.TabIndex = 6
-        Me.lblPhoneNumOut.Text = "i"
         '
         'lblOPhoneNum
         '
@@ -293,9 +286,8 @@ Partial Class frmOutput
         Me.lblFAddressOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.lblFAddressOut.Location = New System.Drawing.Point(158, 68)
         Me.lblFAddressOut.Name = "lblFAddressOut"
-        Me.lblFAddressOut.Size = New System.Drawing.Size(11, 16)
+        Me.lblFAddressOut.Size = New System.Drawing.Size(0, 16)
         Me.lblFAddressOut.TabIndex = 4
-        Me.lblFAddressOut.Text = "i"
         '
         'lblOFAddress
         '
@@ -311,9 +303,8 @@ Partial Class frmOutput
         Me.lblFullNameOut.AutoSize = True
         Me.lblFullNameOut.Location = New System.Drawing.Point(158, 32)
         Me.lblFullNameOut.Name = "lblFullNameOut"
-        Me.lblFullNameOut.Size = New System.Drawing.Size(11, 16)
+        Me.lblFullNameOut.Size = New System.Drawing.Size(0, 16)
         Me.lblFullNameOut.TabIndex = 2
-        Me.lblFullNameOut.Text = "i"
         '
         'lblOFullName
         '
@@ -347,9 +338,8 @@ Partial Class frmOutput
         Me.lblSecurityCodeOut.AutoSize = True
         Me.lblSecurityCodeOut.Location = New System.Drawing.Point(158, 148)
         Me.lblSecurityCodeOut.Name = "lblSecurityCodeOut"
-        Me.lblSecurityCodeOut.Size = New System.Drawing.Size(11, 16)
+        Me.lblSecurityCodeOut.Size = New System.Drawing.Size(0, 16)
         Me.lblSecurityCodeOut.TabIndex = 9
-        Me.lblSecurityCodeOut.Text = "i"
         '
         'lblOSecurityCode
         '
@@ -365,9 +355,8 @@ Partial Class frmOutput
         Me.lblExpDateOut.AutoSize = True
         Me.lblExpDateOut.Location = New System.Drawing.Point(158, 111)
         Me.lblExpDateOut.Name = "lblExpDateOut"
-        Me.lblExpDateOut.Size = New System.Drawing.Size(11, 16)
+        Me.lblExpDateOut.Size = New System.Drawing.Size(0, 16)
         Me.lblExpDateOut.TabIndex = 7
-        Me.lblExpDateOut.Text = "i"
         '
         'lblOExpDate
         '
@@ -383,9 +372,8 @@ Partial Class frmOutput
         Me.lblCardNameOut.AutoSize = True
         Me.lblCardNameOut.Location = New System.Drawing.Point(158, 74)
         Me.lblCardNameOut.Name = "lblCardNameOut"
-        Me.lblCardNameOut.Size = New System.Drawing.Size(11, 16)
+        Me.lblCardNameOut.Size = New System.Drawing.Size(0, 16)
         Me.lblCardNameOut.TabIndex = 5
-        Me.lblCardNameOut.Text = "i"
         '
         'lblOCardName
         '
@@ -401,9 +389,8 @@ Partial Class frmOutput
         Me.lblCardNumOut.AutoSize = True
         Me.lblCardNumOut.Location = New System.Drawing.Point(158, 37)
         Me.lblCardNumOut.Name = "lblCardNumOut"
-        Me.lblCardNumOut.Size = New System.Drawing.Size(11, 16)
+        Me.lblCardNumOut.Size = New System.Drawing.Size(0, 16)
         Me.lblCardNumOut.TabIndex = 3
-        Me.lblCardNumOut.Text = "i"
         '
         'lblOCardNum
         '
