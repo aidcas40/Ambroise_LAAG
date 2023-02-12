@@ -22,19 +22,17 @@
         'Calculates the Total Price of the Services according to the fields that were selected
         dbServiceTotal = frmMain.dbHaircutPrice + frmMain.dbFadeLevelPrice + frmMain.dbMoustachePrice + frmMain.dbBeardPrice + frmMain.dbEyebrowPrice + frmMain.dbFaceMaskPrice + frmMain.dbShapeUpPrice
 
-
-        lblHaircutTypeOut.Text = frmMain.strHaircut 'Prints Customer Haircut Choose
-        lblHaircutPriceOut.Text = "$" & frmMain.dbHaircutPrice & ".00" 'Prints Price of Haircut Choose
-        lblFadeLevelOut.Text = frmMain.strFadeLevel 'Prints Customer Fade Level Choose
-        lblFadeLevelPriceOut.Text = "$" & frmMain.dbFadeLevelPrice & ".00" 'Prints Price of Fade Level
-
-
-        lblExtraServicesOut.Text = strExtraServices 'Prints Customer Extra Services
-        lblExtraServicesPriceOut.Text = dbExtraServices 'Prints Customer Extra Services Prices
+        'Outputs data to the Output Form that was inputted throughout the various panels from the Main Form
+        lblHaircutTypeOut.Text = frmMain.strHaircut
+        lblHaircutPriceOut.Text = "$" & frmMain.dbHaircutPrice & ".00"
+        lblFadeLevelOut.Text = frmMain.strFadeLevel
+        lblFadeLevelPriceOut.Text = "$" & frmMain.dbFadeLevelPrice & ".00"
+        lblExtraServicesOut.Text = strExtraServices
+        lblExtraServicesPriceOut.Text = dbExtraServices
         lblServiceTotalOut.Text = "$" & dbServiceTotal & ".00"
-        lblBarberOut.Text = frmMain.strBarber 'Prints Customer Barber
-        lblDateTimeOut.Text = frmMain.strScheduleDate & " at " & frmMain.strTimeSlot 'Prints Time and Date
-        rtxtHaircutDetailsOut.Text = frmMain.strHairDetails 'Prints Hair Details
+        lblBarberOut.Text = frmMain.strBarber
+        lblDateTimeOut.Text = frmMain.strScheduleDate & " at " & frmMain.strTimeSlot
+        rtxtHaircutDetailsOut.Text = frmMain.strHairDetails
 
         'Outputs data to the Output Form that was inputted into the Billing Address Section from the Main Form
         lblFullNameOut.Text = frmMain.strFName
@@ -47,7 +45,6 @@
         lblCardNameOut.Text = frmMain.strCardName
         lblExpDateOut.Text = frmMain.strExpDate
         lblSecurityCodeOut.Text = frmMain.strSecurityCode
-
     End Sub
 
     'Button that closes the entire program
